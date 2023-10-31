@@ -29,7 +29,12 @@ li {
     margin-right: 50px;
     display: flex;
     justify-content: space-around;
-    text-align: end;
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+li::hover {
+    transform: scale(1.5);
 }
 
 .container {
@@ -51,18 +56,12 @@ a:hover {
 }
 
 #logo {
-    display: flex;
-    width: 100px;
-    object-fit: cover;
-    transform: perspective(10px);
+    width: 100%;
+    margin-left: 20px;
+    transform: scale(1);
+    transition: transform 0.5s;
     
 }
-#logo::hover {
-    transform: scaleX(-1) translateY(-40px);
-    cursor: pointer;
-}
-
-
 .bg_video {
     position: absolute;
     right: 0;
@@ -72,7 +71,7 @@ a:hover {
     width: 100%;
     height: 100%;
     z-index: -100;
-    no-repeat: center;
+    mask-repeat: center;
     background-size: cover;
 
 
