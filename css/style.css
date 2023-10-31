@@ -52,7 +52,16 @@ a:hover {
 
 #logo {
     display: flex;
+    width: 100px;
+    object-fit: cover;
+    transform: perspective(10px);
+    
 }
+#logo::hover {
+    transform: scaleX(-1) translateY(-40px);
+    cursor: pointer;
+}
+
 
 .bg_video {
     position: absolute;
