@@ -1,0 +1,245 @@
+ #background {
+    width: 100%;
+    height: 100vh;
+    inset: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+#background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#background::after {
+    content: '';
+    width: inherit;
+    height: inherit;
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    column-gap: 64px;
+    width: 100%;
+    max-width: 1440px;
+    padding-top: 10px;
+    justify-content: space-around;
+}
+
+header img {
+    width: 70px;
+    height: auto;
+    padding: 1px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+    list-style: none;
+}
+
+.navigation_link {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation_link:hover {
+    color: red;
+}
+
+.navigation_link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 60%;
+    height: 1px;
+    background: red;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+
+.navigation_link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4s;
+}
+
+@media screen and (max-width: 992px) {
+}
+
+.navigation_social {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.navigation_social svg {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+    transition: all 0.4S;
+}
+
+.navigation_social svg:hover {
+    opacity: 1;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+#filmes img {
+    cursor: pointer;
+    transition: all 0.4s;
+    border-radius: 10px;
+}
+
+#filmes img:hover {
+    content: '';
+    transform: translateY(-5px);
+}
+
+#filmes {
+    margin-top: 200px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0;
+    transition:  all 0.4s;
+}
+
+#filmes button {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    transform: skew(-20deg);
+    background-color: red;
+    color: #fff;
+    outline: none;
+    border: none;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 139,);
+    align-items: center;
+    transition: all 0.4s;
+}
+
+#filmes button:hover {
+    transform: translateZ(-4px);
+}
+
+
+
+
+
+#filmes .mvl p, a  {
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    justify-content: center;
+    
+
+}
+
+
+#filmes .hm p, a {
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    justify-content: center;
+    
+
+}
+
+
+#filmes .guardi p, a  {
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    justify-content: center;
+
+}
+
+
+#filmes .panther p, a {
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    justify-content: center;
+
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+   
+.slide {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+   
+   .slide img {
+    width: 100%;
+    height: auto;
+}
+   
+.slide.active {
+    display: block;
+ }
+   
+.controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+   
+.controls button {
+    background: transparent;
+    border: none;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
