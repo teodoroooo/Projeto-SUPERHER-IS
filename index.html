@@ -10,10 +10,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <script src="./scripts/script.js"></script>
+  <script src="./scripts/script.js" defer></script>
 </head>
 <body>
-    <div id="background">
+    <div class="background">
       <video loop autoplay muted>
         <source src="./assets/trailer.mp4" type="video/mp4">
       </video>
@@ -34,58 +34,12 @@
         
       </header>
     </div>
-    <div class="slider">
-      <div class="slides">
-        <!--Radio-Buttons-->
-        <input type="radio" name="radiobtn" id="radio1">
-        <input type="radio" name="radiobtn" id="radio2">
-        <input type="radio" name="radiobtn" id="radio3">
-        <input type="radio" name="radiobtn" id="radio4">
-         <!--FIM-Radio-Buttons-->
-
-         <!--Slides Imagens-->
-        <div class="slide_first">
-          <img src="./midías/capas/capitã marvel (1).jpg" alt="Capitao" srcset="">
-
-        </div>
-        <div class="slide">
-          <img src="./midías/capas/capitã marvel (2).jpg" alt="GuardianOFTheGalaxy" srcset="">
-
-        </div>
-        <div class="slide">
-          <img src="./midías/capas/capitã marvel (3).jpg" alt="Spider" srcset="">
-
-        </div>
-        <div class="slide">
-          <img src="./midías/capas/capitã marvel (4).jpg" alt="Marvel" srcset="">
-
-        </div>
-         <!--FIM-Slides Imagens-->
-
-         <!--Navigation auto-->
-
-         <div class="navigation-auto">
-            <div class="auto-btn1">
-
-            </div>
-            <div class="auto-btn2">
-              
-            </div>
-            <div class="auto-btn3">
-              
-            </div>
-            <div class="auto-btn4">
-              
-            </div>
-         </div>
-          
-      </div>
-
-      <div class="manual-navigation">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-        <label for="radio4" class="manual-btn"></label>
+    <div class="carrossel">
+      <div class="container" id="img">
+          <img src="./midías/capas/capitã marvel (1).jpg" alt="Capitã Marvel">
+          <img src="./midías/capas/vingadores.jpg" id="img2" alt="Vingadores">
+          <img src="./midías/capas/guardioes da galaxy.jpg" id="img3" alt="guardioes da galaxia">
+          <img src="./midías/capas/dr estranho.jpg" id="img4" alt="Dr Estranho">
       </div>
     </div>
     <main>
