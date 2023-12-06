@@ -1,0 +1,91 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.555);
+}
+header {
+    display: flex;
+    align-items: center;
+    column-gap: 64px;
+    width: 100%;
+    max-width: 1440px;
+    padding-top: 10px;
+    justify-content: space-around;
+}
+
+header img {
+    width: 70px;
+    height: auto;
+    padding: 1px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+    list-style: none;
+}
+
+.navigation_link {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+.navigation_link:hover {
+    color: red;
+}
+
+.navigation_link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 60%;
+    height: 1px;
+    background: red;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s;
+}
+
+.navigation_link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.4s;
+}
+
+.carousel {
+    width: 450px;
+    overflow: hidden;
+    height: 200px;
+}
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+.carousel .dots {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.carousel .dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.carousel .dots span.active {
+    background-color: #717171;
+}
