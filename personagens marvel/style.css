@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    list-style: none;
+    background-color: black;
+}
+.personagem{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+
+   .personagem__title{
+    color: red;
+   }
+
+   .personagem__descricao{
+    color: white;
+    }
+    
+.personagem__imagem {
+    display: inline-block;
+    position: relative;
+    float: left;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 0px 10px 10px 0;
+    width: 250px;
+}
