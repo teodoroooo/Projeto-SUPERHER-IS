@@ -1,12 +1,12 @@
 * {
+    margin: 0;
+    padding: 0;
     list-style: none;
-background-color: #591C21;
-        
+       
     }
-
-
-
+    
 .titlePage{
+    background-color: black;
     display: block;
     text-align: center;
     font-family: 'Young Serif', serif;
@@ -15,25 +15,41 @@ background-color: #591C21;
            
 }
 
+.banner {
+    background-image: url(../imagens/banner.jpg);
+    
+}
+
+.personagem{
+display: flex;
+flex-direction: column;
+margin-right: 15px;
+
+} 
+
 .personagem__title{
    display: grid;
    justify-content: center;
    align-content: center;
    font-family:'Open Sans', sans-serif; 
    font-size: 30px;
+   font-weight: 900;
    color: #D92525;
    }
 
 .personagem__imagem {
     float: left;
-    margin-right: 15px;
+   
     border-radius: 20px;
-    width: 300px;
+    max-width: 20%;
+    height: auto;
+    
    }
 
 .personagem__descricao{
     color: white;
     line-height: 1.5;
     font-family:'Quicksand', sans-serif;
-    border: 2px solid wi; 
-    }
+    font-weight: 700;
+    align-items: center;
+}
