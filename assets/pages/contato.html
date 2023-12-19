@@ -1,35 +1,191 @@
 <!DOCTYPE html>
-<html lang="br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
+    <link rel="stylesheet" href="contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap"
+            rel="stylesheet"
+        >
+    <title>Formulário</title>
 </head>
 <body>
-    <h2>Contato</h2>
-    <fieldset>
-       <legend>Cadastro</legend>
-     
-    <p>Nome Completo</p>
-    <input type="text" placeholder="Nome Completo" />
-    
-    <br />
-    <br/>
-    <label for="mensagem">Mensagem</label>
-    <br/>
-    <textarea name="mensagem"  id="mensagem" cols="30" rows="10"></textarea>
-    <br />
-    <p>Qual é o seu herói favorito?</p> <input type="text" placeholder="" />
-    <br/>
-    
-    <br />
-    <label for="termos">Aceito os termos e condições</label>
-    <input type="checkbox"  name="" id="termos"  />
+    <div class="main">
+        <section class="contact-section">
+            <h2>Contato</h2>
+            <form action="https://api.staticforms.xyz/submit"  method="post">
+                <label>Nome</label>
+                <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+                <label>Qual é o seu herói favorito?</label>
+                <input type="herói" name="herói" placeholder="" autocomplete="off" required>
+                <label>Mensagem</label>
+                <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                <button type="submit" > <a href="obrigado.html"></a>Enviar</button> 
 
-    <br />
-    <br/> 
-    
-    <button type="submit">Enviar</button>
-    <button type="reset">Limpar Formulário</button> 
+                <input type="hidden" name="accessKey" value="3ae9b790-c15c-49c7-9cdf-ea26db5238ba">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/Projeto-SUPERHER-IS/pages/obrigado.html">
+            </form>
+        </section>
+        <div class="container-geral"> 
+            <div class="contact">       
+                <div class="profile-wrapper">
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img
+                                src="./mariafernandafoto.jpeg"
+                                alt="Profile"
+                            >
+                        </div>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#linkedin" title="Linkedin">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                    >
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 
+                                                2 0 0 1 -2 -2z">
+                                        </path>
+                                        <path d="M8 11l0 5"></path>
+                                        <path d="M8 8l0 .01"></path>
+                                        <path d="M12 16l0 -5"></path>
+                                        <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="profile-name">
+                            <h2>Maria Fernanda</h2>
+                            <div class="profile-bio">
+                                I'm a student front end development React Javascript <em></em><em></em>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact">       
+                <div class="profile-wrapper">
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img
+                                src="./mariafernandafoto.jpeg"
+                                alt="Profile"
+                            >
+                        </div>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#linkedin" title="Linkedin">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                    >
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 
+                                                2 0 0 1 -2 -2z">
+                                        </path>
+                                        <path d="M8 11l0 5"></path>
+                                        <path d="M8 8l0 .01"></path>
+                                        <path d="M12 16l0 -5"></path>
+                                        <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="profile-name">
+                            <h2>Maria Fernanda</h2>
+                            <div class="profile-bio">
+                                I'm a student front end development React Javascript <em></em><em></em>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="contact">       
+                <div class="profile-wrapper">
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img
+                                src="./mariafernandafoto.jpeg"
+                                alt="Profile"
+                            >
+                        </div>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#linkedin" title="Linkedin">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                    >
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 
+                                                2 0 0 1 -2 -2z">
+                                        </path>
+                                        <path d="M8 11l0 5"></path>
+                                        <path d="M8 8l0 .01"></path>
+                                        <path d="M12 16l0 -5"></path>
+                                        <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="profile-name">
+                            <h2>Maria Fernanda</h2>
+                            <div class="profile-bio">
+                                I'm a student front end development React Javascript <em></em><em></em>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact">       
+                <div class="profile-wrapper">
+                    <div class="profile">
+                        <div class="profile-image">
+                            <img
+                                src="./mariafernandafoto.jpeg"
+                                alt="Profile"
+                            >
+                        </div>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#linkedin" title="Linkedin">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" 
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                    >
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 
+                                                2 0 0 1 -2 -2z">
+                                        </path>
+                                        <path d="M8 11l0 5"></path>
+                                        <path d="M8 8l0 .01"></path>
+                                        <path d="M12 16l0 -5"></path>
+                                        <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="profile-name">
+                            <h2>Maria Fernanda</h2>
+                            <div class="profile-bio">
+                                I'm a student front end development React Javascript <em></em><em></em>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </body>
 </html>
