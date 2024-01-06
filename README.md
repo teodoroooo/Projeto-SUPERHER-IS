@@ -15,13 +15,13 @@ Este projeto é sobre a marvel, estipulado pelo Curso da CoderHouse
 - HTML
 - CSS
 - JavaScript
-- [AOS Animate](https://michalsnik.github.io/aos/)
+- BootStrap 5
 
 ## 📔 Conhecimentos abordados
 
 - [x] Uso semântico do HTML
 - [x] Carregamento de video no background
-- [x] Animações com a biblioteca [AOS](https://michalsnik.github.io/aos/)
+- [x] BootStrap 5
 - [x] Uso do CSS Flexbox
 - [x] Efeitos com a propriedade `transform` do css
 

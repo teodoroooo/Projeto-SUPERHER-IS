@@ -311,3 +311,41 @@ img {
 .card .arrow span {
     font-size: 24px;
 }
+
+.carousel-inner {
+    margin-top: 200px;
+    width: 100%;
+}
+
+.w{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    border-radius: 10px;
+    
+}
+
+.carousel-caption  h5{
+    font-size: 30px;
+    text-align: left;
+    margin-left: -50px;
+    background-color: red;
+    box-shadow: #fff;
+    width: 400px;
+    height: 70px;
+    color:#fff;
+    border-radius: 10px;
+    z-index: 999;
+    box-shadow: 0 0 10px rgba(0,0,0);
+
+}
+
+.carousel-caption p {
+    font-size: 15px;
+    text-align: left;
+    color: whitesmoke;
+    margin-left: -50px;
+
+}
