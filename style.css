@@ -123,9 +123,13 @@ header nav.menu-desktop ul li {
 }
 
 /* ESTILOS TOPO-DO-SITE */
-
+.gap {
+    display: flex;
+    align-items: center;
+    gap: 400px;
+}
 .carousel-item {
-    padding: 10px 6%;
+    padding: 20px 6%;
 }
 
 .carousel-item button{
