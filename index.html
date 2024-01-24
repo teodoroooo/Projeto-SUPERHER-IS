@@ -1,196 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Marvel - Super Heróis</title>
-  <!-- Link do bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Link do CSS -->
-  <link rel="stylesheet" href="./assets/styles/main.css">
-  <!-- Link de Font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <!-- Link de Font do Google -->
-  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- Link de animaçoes -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Link de font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <!-- Link do BootStrap -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo-->
+    <title>Marvel</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <!--FIM favicon-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Link CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Fim CSS-->
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--FIM GOOGLE FONTS-->
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
 </head>
 <body>
-    <div class="background">
-      <video loop autoplay muted>
-        <source src="./assets/trailer.mp4" type="video/mp4">
-      </video>
-    </div>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="https://www.marvel.com/">
+                    <img src="images/logo.png" alt="Avengers">
+                </a>
+            </div><!--Fim-Logo-->
 
-    <div id="app">
-      <header>
-        <img src="./assets/logo.webp" alt="MARVEL">
-  
-        <ul class="navigation">
-          <li><a href="/index.html" class="navigation_link">Inicio</a></li>
-          <li><a href="/pages/filmes.html" class="navigation_link">Filmes</a></li>
-          <li><a href="/pages/personagens.html" class="navigation_link">Personagens</a></li>
-          <li><a href="/pages/noticias.html" class="navigation_link">Notícias</a></li>
-          <li><a href="/pages/contato.html" class="navigation_link">Contato</a></li>
-        </ul>
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="http://">Inicio</a></li>
+                    <li><a href="http://">Filmes</a></li>
+                    <li><a href="http://">Contato</a></li>
+                    <li><a href="http://">Personagens</a></li>
+                    <li><a href="http://">Noticias</a></li>
+                </ul>
+            </nav><!--Fim menu-desktop-->
         
-        
-      </header>
-    </div>
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      </div>
-      <div class="carousel-inner mt-xl-5">
-        <div class="carousel-item active">
-          <img src="/assets/midías/capas/capitã marvel (1).jpg" class="w" alt="...">
-          <div class="carousel-caption">
-            <h5>Capitã-Marvel</h5>
-            <p>Capitã Marvel é uma alienígena Kree que se encontra no meio de uma batalha entre seu povo e os Skrulls. Com a ajuda de Nick Fury, ela tenta impedir uma invasão na Terra, descobrir os segredos de seu passado e pôr um fim ao antigo conflito.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="/assets/midías/capas/homem aranha.jpg" class="w" alt="...">
-          <div class="carousel-caption">
-            <h5>Homem Aranha - De volta ao Lar</h5>
-            <p>Depois de lutar ao lado dos Vingadores, chegou a hora do jovem Peter Parker voltar para casa em Nova York ao lado de sua tia May. Sob o olhar atento do mentor Tony Stark, Peter começa a abraçar sua nova identidade como Homem-Aranha e combate diariamente pequenos crimes nas redondezas. Ele acredita que encontrou a missão de sua vida quando o terrível vilão Abutre surge ameaçando a cidade. O problema é que a tarefa não será tão fácil como ele imaginava.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/midías/capas/dr estranho.jpg" class="w" alt="...">
-          <div class="carousel-caption">
-            <h5>Dr Estranho</h5>
-            <p>Após sua carreira ser destruída, um brilhante, porém arrogante, cirurgião ganha uma nova chance em sua vida quando um feiticeiro o treina para se tornar o Mago Supremo.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/midías/capas/guardioes da galaxy.jpg" class="w" alt="...">
-          <div class="carousel-caption">
-            <h5>Guardiões da Galaxia</h5>
-            <p>Os Guardiões da Galáxia lutam para manter sua nova família unida enquanto desvendam os mistérios sobre o verdadeiro pai de Peter Quill.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    
-  <div class="back">
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div><!--BTN-ABRIR-MENU-->
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div><!--BTN-FECHAR-->
+            
+            
+                <nav>
+                    <ul>
+                        <li><a href="http://">Inicio</a></li>
+                        <li><a href="http://">Filmes</a></li>
+                        <li><a href="http://">Contato</a></li>
+                        <li><a href="http://">Personagens</a></li>
+                        <li><a href="http://">Noticias</a></li>
+                    </ul>
+                </nav><!--Menu-Mobile-->
+
+            </div><!--FIM-MENU-MOBILE-->
+
+            <div class="overlay-menu" id="overlay-menu">
+
+            </div><!--Overlay-Menu-->
+        </div><!--Interface-->
+    </header>
+
     <main>
-      <div id="filmes">
-        <div class="card_filmes">
-          <img src="./assets/The Marvels.jpg" alt="The Marvels"  >
-          <p>Capitã Marvel</p>
-          <button><a href="http://marvel.com">Assista Aqui</a></button>
-        </div> 
-        <div class="card_filmes">
-          <img src="./assets/antmanandthewaspquantumania.jpg" alt="Homem-Formiga"  >
-          <p>Homem-Formiga</p>
-          <button><a href="http://marvel.com">Assista Aqui</a></button>
-        </div>
-        
-        <div class="card_filmes">
-          <img src="./assets/guardiansofthegalaxyvolume3.jpg" alt="GuardianOFTheGalaxy"  >
-          <p>Guardioes da Galaxia</p>
-          <button><a href="http://marvel.com">Assista Aqui</a></button>
-        </div>
-        
-        <div class="card_filmes">
-          <img src="./assets/blackpantherwakandaforever.jpg" alt="BlackPanther"  >
-          <p>Pantera Negra</p>
-          <button><a href="http://marvel.com">Assista Aqui</a></button>
-        </div>
-      </div>
+        <section class="scroll-infinito">
+            
+        </section>
+        <section class="topo-do-site">
+            <div class="interface">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="2000">
+                            <a href="https://legadodamarvel.com.br/marvel-studios-revela-os-novos-personagens-que-serao-importantes-na-fase-5"><img src="images/carrossel-1.png" alt="Marvel Studios revela os novos personagens que serão importantes na Fase 5"></a>
+                            <h3 class="title">Novos Personagens</h2>
+                            <button><a href="https://legadodamarvel.com.br/marvel-studios-revela-os-novos-personagens-que-serao-importantes-na-fase-5">Saiba Mais</a></button>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <a href="https://legadodamarvel.com.br/marvel-finalmente-fecha-contrato-com-todos-os-4-atores-de-quarteto-fantastico/"><img src="images/carrossel-2.png" alt="Marvel finalmente fecha contrato com todos os 4 atores de Quarteto Fantástico"></a>
+                            <h3 class="title">Quarteto Fantástico</h2>
+                            <button><a href="https://legadodamarvel.com.br/marvel-finalmente-fecha-contrato-com-todos-os-4-atores-de-quarteto-fantastico/">Saiba Mais</a></button>
+                          </div>
+                          <div class="carousel-item" data-bs-interval="2000">
+                            <a href="https://www.omelete.com.br/marvel-cinema/demolidor-filmagens-eco"><img src="images/carrossel-3.png"  alt="Marvel retoma filmagens de Demolidor e estuda futuro de Eco"></a>
+                            <h3 class="title">Demolidor</h2>
+                            <button><a href="https://www.omelete.com.br/marvel-cinema/demolidor-filmagens-eco">Saiba Mais</a></button>
+                          </div>
+                        </div>
+                    </div>
+            </div>
+
+            
+        </section>
     </main>
-    <div class="container">
-      <div class="card">
-          <div class="img">
-              <img src="./assets/Venom_poster-345x172.avif" alt="">
-              <span>Marvel</span>
-          </div>
-
-          <div class="content">
-              <span class="title">Venom</span>
-              <p class="desc">Venom teria papel maior em Marvel’s Spider-Man 2, Revela Tony Todd</p>
-          </div>
-          <button class="btn btn-primary">Ver</button>
-
-          <div class="arrow">
-              <span>&#8673;</span>
-          </div>
-      </div>
-      <div class="card">
-        <div class="img">
-            <img src="./assets/marvels-wolverine-1280x720-12242-1-345x172.jpg" alt="">
-            <span>Marvel</span>
-        </div>
-
-        <div class="content">
-            <span class="title">Wolverine</span>
-            <p class="desc">Marvel’s Wolverine pode ser lançado em 2024</p>
-        </div>
-        <button class="btn btn-primary"><a href="http://https://overplay.com.br/venom-teria-papel-maior-em-marvels-spider-man-2-revela-tony-todd/">Ver</a></button>
-
-        <div class="arrow">
-            <span>&#8673;</span>
-        </div>
-    </div>
-    <div class="card">
-      <div class="img">
-          <img src="./assets/Marvel-Snap-capa-02-09-345x172.avif" alt="">
-          <span>Marvel</span>
-      </div>
-
-      <div class="content">
-          <span class="title">Marvel Snap</span>
-          <p class="desc">ByteDance anuncia reformulação do segmento de jogos e preocupa fãs de Marvel Snap.</p>
-      </div>
-      <button class="btn btn-primary">Ver</button>
-
-      <div class="arrow">
-          <span>&#8673;</span>
-      </div>
-    </div>
-    </div>
-  </div>  
-    
-   
-
-    <div id="footer">
-      <footer>
-        <div class="navigation_social">
-          <svg src="./assets/svg/xml.svg"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path fill="#EDF1F7" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
-          </svg>
-          <svg src="./assets/svg/xml.svg""" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path fill="#EDF1F7" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
-          </svg>
-          <svg src="./assets/svg/xml.svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <path fill="#EDF1F7" d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/>
-          </svg>
-          <svg src="./assets/svg/xml.svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path fill="#EDF1F7" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-            <path fill="#EDF1F7" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/>
-          </svg>
-        </div>
-      </footer>
-    </div>
-</body>
+    <script src="scroll.js"></script>
+</body> 
 </html>
