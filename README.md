@@ -8,7 +8,7 @@
 
 ## 💻 Projeto
 
-Este projeto é sobre a marvel, estipulado pelo Curso da CoderHouse
+Este projeto é sobre a marvel, estipulado pelo Curso da CoderHouse - Projeto Filmes
 
 ## 🚀 Tecnologias
 
@@ -20,14 +20,15 @@ Este projeto é sobre a marvel, estipulado pelo Curso da CoderHouse
 ## 📔 Conhecimentos abordados
 
 - [x] Uso semântico do HTML
-- [x] Carregamento de video no background
+- [x] JavaScript
 - [x] BootStrap 5
 - [x] Uso do CSS Flexbox
 - [x] Efeitos com a propriedade `transform` do css
 
 
-## 📝 Tema de casa
+## 📝 Tema do projeto
 
 - [ ] Criar responsividade
 - [ ] Adicionar efeito de hover nos botões
-
+- [ ] Consumir API
+- [ ] Colocar interatividade com JavaScript
