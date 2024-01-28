@@ -50,8 +50,8 @@ function geraItens(i){
                 setTimeout(() => {
                     if (cartaa1.src == cartaa2.src){ 
                         // Deixando a carta branca quando clicar em SRC iguais e removendo o evento de click                       
-                        cartaa1.src = '/img/branco.png'
-                        cartaa2.src = '/img/branco.png'
+                        cartaa1.src = '/assets/img/branco.png'
+                        cartaa2.src = '/assets/img/branco.png'
                         cartaa1.style.border = 'none'
                         cartaa2.style.border = 'none'
                         cartaa1.removeEventListener('click', eventoCartao1)
@@ -71,7 +71,7 @@ function geraItens(i){
         }
         
         function eventoCartao1(){
-            if (carta.src != '/img/branco.png'){
+            if (carta.src != '/assets/img/branco.png'){
                 carta.id = i
                 carta.src = arrayImagens1[i]
                 escolhidas.push(carta)
@@ -80,7 +80,7 @@ function geraItens(i){
         }
 
         function eventoCartao2(){
-            if (carta2.src != '/img/branco.png'){
+            if (carta2.src != '/assets/img/branco.png'){
                 carta2.id = i
                 carta2.src = arrayImagens2[i]
                 escolhidas.push(carta2)
@@ -97,7 +97,7 @@ function geraItens(i){
 
 // Função para mostrar o verso da "carta", no caso mudar o src da img
 function viraCostas(carta){
-    carta.src = '/img/costasCarta.png'
+    carta.src = '/assets/img/costasCarta.png'
 }
 
 // Add elemento no array

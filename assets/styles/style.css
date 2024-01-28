@@ -6,7 +6,7 @@
 }
 /* ESTILOS GERAIS */
 body {
-    background-image: url(/img/fundo.jpg);
+    background-image: url(/assets/img/fundo.jpg);
     background-position: center;
     height: 100vh;
 }
@@ -521,6 +521,8 @@ body::-webkit-scrollbar-thumb {
 footer {
     width: 100%;
     color: var(--color-neutral-40);
+    background-color: #000;
+    margin-top: 20px;
 }
 
 .footer-link {
@@ -564,16 +566,16 @@ footer {
 }
 
 #bi-linkedin {
-    background-color: #4267b3;
+    background-color: #ffffff;
     color: #fff;
 }
 
 #bi-github {
-    background-color: #4267b3;
+    background-color: #ffffff;
 }
 
 #marvel {
-    background-color: #ff0000;
+    background-color: #ffffff;
 }
 
 .footer-list {
@@ -613,11 +615,10 @@ footer {
     all: unset;
     padding: 0.75rem;
     width: 100%;
-    background-color: #df2020;
+    background-color: #fff;
 }
 
 #input_group button {
-    background-color: #ff0000;
     border: none;
     color: var(--color-neutral-40);
     padding: 0px 1.25rem;
