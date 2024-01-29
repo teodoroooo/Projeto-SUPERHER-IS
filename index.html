@@ -6,29 +6,33 @@
     <!--Titulo-->
     <title>Marvel</title>
     <!--Favicon-->
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/images/logo.png" type="image/x-icon">
     <!--FIM favicon-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--SWIPER-->
     <!--Link CSS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
     <!--Fim CSS-->
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!--FIM GOOGLE FONTS-->
-    <!--BOOTSTRAP-->
+    <!--BOOTSTRAP/JS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script type="text/javascript" src="/assets/js/script.js" defer></script>
     
+    <!--BOOTSTRAP/JS-->
 </head>
 <body>
     <header>
         <div class="interface">
             <div class="logo">
                 <a href="https://www.marvel.com/">
-                    <img src="images/logo.png" alt="Avengers">
+                    <img src="/assets/images/logo.png" alt="Avengers">
                 </a>
             </div><!--Fim-Logo-->
 
@@ -38,7 +42,6 @@
                     <li><a href="http://">Filmes</a></li>
                     <li><a href="http://">Contato</a></li>
                     <li><a href="http://">Personagens</a></li>
-                    <li><a href="http://">Noticias</a></li>
                 </ul>
             </nav><!--Fim menu-desktop-->
         
@@ -59,7 +62,6 @@
                         <li><a href="http://">Filmes</a></li>
                         <li><a href="http://">Contato</a></li>
                         <li><a href="http://">Personagens</a></li>
-                        <li><a href="http://">Noticias</a></li>
                     </ul>
                 </nav><!--Menu-Mobile-->
 
@@ -72,44 +74,210 @@
     </header>
 
     <main>
-        <section class="scroll-infinito">
-            <div class="ticker">
-                <marquee scrollamount="15">
-                    <div class="gap">
-                        <img src="images/scroll.png" alt="Marvel" style="width: 200px;">
-                        <img src="images/scroll.png" alt="Marvel" style="width: 200px;">
-                        <img src="images/scroll.png" alt="Marvel" style="width: 200px;">
-                        <img src="images/scroll.png" alt="Marvel" style="width: 200px;">
-                        <img src="images/scroll.png" alt="Marvel" style="width: 200px;">
-                    </div>   
-                </marquee>
-            </div>
-        </section>
-        <section class="topo-do-site">
-            <div class="interface">
-                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active" data-bs-interval="2000">
-                            <a href="https://legadodamarvel.com.br/marvel-studios-revela-os-novos-personagens-que-serao-importantes-na-fase-5"><img src="images/carrossel-1.png" alt="Marvel Studios revela os novos personagens que serão importantes na Fase 5"></a>
-                            <h3 class="title">Novos Personagens</h2>
-                            <button><a href="https://legadodamarvel.com.br/marvel-studios-revela-os-novos-personagens-que-serao-importantes-na-fase-5">Saiba Mais</a></button>
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <a href="https://legadodamarvel.com.br/marvel-finalmente-fecha-contrato-com-todos-os-4-atores-de-quarteto-fantastico/"><img src="images/carrossel-2.png" alt="Marvel finalmente fecha contrato com todos os 4 atores de Quarteto Fantástico"></a>
-                            <h3 class="title">Quarteto Fantástico</h2>
-                            <button><a href="https://legadodamarvel.com.br/marvel-finalmente-fecha-contrato-com-todos-os-4-atores-de-quarteto-fantastico/">Saiba Mais</a></button>
-                          </div>
-                          <div class="carousel-item" data-bs-interval="2000">
-                            <a href="https://www.omelete.com.br/marvel-cinema/demolidor-filmagens-eco"><img src="images/carrossel-3.png"  alt="Marvel retoma filmagens de Demolidor e estuda futuro de Eco"></a>
-                            <h3 class="title">Demolidor</h2>
-                            <button><a href="https://www.omelete.com.br/marvel-cinema/demolidor-filmagens-eco">Saiba Mais</a></button>
-                          </div>
-                        </div>
-                    </div>
+        <div class="logos"><!--LOGOS-->
+            <div class="logos-slide">
+              <img src="/assets/images/slide.png" alt="Marvel">
+              <img src="/assets/images/slide.png" alt="Marvel">
+              <img src="/assets/images/slide.png" alt="Marvel">
+              <img src="/assets/images/slide.png" alt="Marvel">
+              <img src="/assets/images/slide.png" alt="Marvel">
+              <img src="/assets/images/slide.png" alt="Marvel">
+              <img src="/assets/images/slide.png" alt="Marvel">
+              <img src="/assets/images/slide.png" alt="Marvel">
             </div>
 
-            
+            <div class="logos-slide">
+              <img src="/assets/images/slide.png" alt="Marvel">
+              <img src="/assets/images/slide.png" alt="Marvel">
+              <img src="/assets/images/slide.png" alt="Marvel">
+              <img src="/assets/images/slide.png" alt="Marvel">
+              <img src="/assets/images/slide.png" alt="Marvel">
+              <img src="/assets/images/slide.png" alt="Marvel">
+              <img src="/assets/images/slide.png" alt="Marvel">
+              <img src="/assets/images/slide.png" alt="Marvel">
+            </div>
+        </div><!--LOGOS-->
+
+        <section class="topo-do-site">
+            <div class="interface"> 
+                <div id="carouselExampleCaptions" class="" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/assets/images/carrossel-1.png" alt="Novos Personagens" class="">
+                        <div class="carousel-caption">
+                          <button><a href="http://">Novos Personagens</a></button>
+                          <p>Marvel Studios revela os novos personagens que serão importantes na Fase 5.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/assets/images/carrossel-2.png" class="" alt="Quarteto Fantástico">
+                        <div class="carousel-caption">  
+                          <button><a href="http://">Quarteto Fantásticol</a></button>
+                          <p>Marvel finalmente fecha contrato com todos os 4 atores de Quarteto Fantástico.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/assets/images/carrossel-3.png" class="" alt="Demolidor">
+                        <div class="carousel-caption">
+                          <button><a href="http://">Demolidor</a></button>
+                          <p>Marvel retoma filmagens de Demolidor e estuda futuro de Eco.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>   
+        </section><!--FIM DO TOPO DO SITE -->
+        
+        <section class="herois">
+          <div class="buscar-box">
+            <div class="lupa-buscar">
+                <i class="bi bi-search"></i>
+            </div><!--lupa-buscar-->
+    
+            <div class="input-buscar">
+                <input type="text" name="search" id="search" class="" placeholder="Pesquise seu herói">
+            </div><!--input-buscar-->
+    
+            <div class="btn-fechar">
+                <i class="bi bi-x-circle"></i>
+            </div><!--btn-fechar-->
+          </div><!--buscar-box-->
+    
+          <!-- Slider main container -->
+          <div class="swiper heroSwiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" id="swiper">
+              <!-- Slides -->
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+    
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>  
+        </section> <!--Herois-->
+
+        <section class="new">
+          <div class="news-container">
+            <div class="title">
+                Ultimas Noticias
+            </div>
+    
+            <ul>
+                <li>
+                  Vingadores 5: Veja como será a volta de Chris Evans e Robert Downey Jr.
+                </li>
+                
+                <li>
+                  Demolidor: Imagem do Rei do Crime confirma o papel surpreendente do vilão na série
+                </li>
+    
+                <li>
+                  Thor 5 pode introduzir o verdadeiro substituto de Chris Hemsworth no MCU
+                </li>
+            </ul>
+          </div>
+        </section><!--New-->
+
+        <section class="jogo">
+          <!-- Parte do jogo -->
+          <h2 id = 'jogo'>JOGO DA MEMÓRIA</h2>
+          <h2 id = 'pontos'>PONTOS: <span id = 'totalPontos'></span></h2>
+          
+          <div id = 'grade'>
+              <div id = 'divContainer'>
+              </div>
+              <div id = 'final'>
+                  <p>Obrigado por jogar!</p>
+                  <p id = 'relogar'>Jogar Novamente!</p>
+              </div>
+          </div>
         </section>
-    </main>
+    </main> 
+    <footer>
+      <div id="footer_content">
+          <div id="footer_contacts">
+              <h1>Links</h1>
+              <p>Algumas das páginas sociais.</p>
+
+              <div id="footer_social_media">
+                  <a href="#" class="footer-link" id="bi-linkedin">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+
+                  <a href="#" class="footer-link" id="bi-github">
+                    <i class="bi bi-github"></i>
+                  </a>
+
+                  <a href="#" class="footer-link" id="marvel">
+                    <i class="bi bi-box-fill"></i>
+                  </a>
+              </div>
+          </div>
+          
+          <ul class="footer-list">
+              <li>
+                  <h3>CoderHouse Brasil</h3>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Tech</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Adventures</a>
+              </li>
+              <li>
+                  <a href="https://www.youtube.com/watch?v=knfrxj0T5NY" class="footer-link">Music</a>
+              </li>
+          </ul>
+
+          <ul class="footer-list">
+              <li>
+                  <h3>Desenvolvedores</h3>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Gabriel Teodoro</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Maria Fernanda</a>
+              </li>
+              <li>
+                  <a href="#" class="footer-link">Marta Nascimento</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Duda Carvalho</a>
+            </li>
+          </ul>
+
+          <div id="footer_subscribe">
+              <h3>Contato</h3>
+
+              <p>
+                  Nos envie um e-mail para dar dicas e críticas construtivas.
+              </p>
+
+              <div id="input_group">
+                  <input type="email" id="email">
+                  <button>
+                    <i class="bi bi-envelope"></i>
+                  </button>
+              </div>
+          </div>
+      </div>
+
+      <div id="footer_copyright">
+          &#169
+          2024 Todos os direitos reservados.
+      </div>
+    </footer>
+    <script src="/assets/js/jogo.js"></script>
+    <script src="/assets/js/search.js"></script>
 </body> 
 </html>
