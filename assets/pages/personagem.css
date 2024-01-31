@@ -16,7 +16,7 @@
 }
 
 
-/* ESTILOS CABEÇALHO */
+
 header {
     padding: 10px 4%;
     
@@ -57,7 +57,7 @@ header nav.menu-desktop ul li {
     width: 100px;
 }
 
-/* ESTILOS MENU-MOBILE */
+
 .btn-abrir-menu i{
     color:#ff0000;
     font-size: 60px;
@@ -166,14 +166,14 @@ header nav.menu-desktop ul li {
     position: absolute;
 }
 
-/* utilizado para colocar um efeito quando o mouse está em cima do botão*/
+
 .button:hover {
     background: #A90017;
     color: #fff;
     box-shadow: 0 5px #960014;
 }
 
-/* utilizado para dar efeito de que o botão está sendo clicado */
+
 .button:active{
      position: relative;
      top: 5px;
@@ -216,19 +216,19 @@ body::-webkit-scrollbar-thumb {
     width: 10px;
 }
 
-/* Track */
+
 ::-webkit-scrollbar-track {
     background: rgb(37, 32, 32); 
 }
  
-/* Handle */
+
 ::-webkit-scrollbar-thumb {
     background: #ee2027;
     border-radius: 20px;
     border: 1px solid rgb(25, 25, 25);
 }
 
-/* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
     background: #971a1f; 
 }
