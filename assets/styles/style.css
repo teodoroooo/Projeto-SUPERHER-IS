@@ -58,11 +58,11 @@ header nav.menu-desktop ul li {
 
 /* ESTILOS MENU-MOBILE */
 .btn-abrir-menu{
-    display: flex;
+    display: none;
 }
 
 .btn-abrir-menu i{
-    color: #00FF08;
+    color: #000000;
     font-size: 40px;
 }
 
@@ -92,7 +92,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile .btn-fechar i{
-    color: #00FF08;
+    color: #ff0000;
     font-size: 30px;
 }
 
@@ -109,7 +109,7 @@ header nav.menu-desktop ul li {
 }   
 
 .menu-mobile nav ul li a:hover{
-    background-color: #00FF08;
+    background-color: #ff0000;
     color: #000;
 }
 
@@ -724,3 +724,4 @@ footer {
         padding: 3rem 2rem;
     }
 }
+
