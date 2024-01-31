@@ -6,72 +6,583 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="personagem.css">
+    <link rel="shortcut icon" href="/Projeto-SUPERHER-IS/assets/images/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Personagens da Marvel</title>
 </head>
 
 <body>
-   
+
     <header>
-        <h1>Universo Marvel</h1>
+        <div class="background"></div>
+        <div class="interface">
+            <div class="logo">
+                <a href="https://www.marvel.com/">
+                    <img src="imagens/logo.png" alt="Avengers">
+                </a>
+            </div><!--Fim-Logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="http://">Inicio</a></li>
+                    <li><a href="http://">Filmes</a></li>
+                    <li><a href="http://">Contato</a></li>
+                    <li><a href="http://">Personagens</a></li>
+                    <li><a href="http://">Noticias</a></li>
+                </ul>
+            </nav><!--Fim menu-desktop-->
+        
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div><!--BTN-ABRIR-MENU-->
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div><!--BTN-FECHAR-->
+            
+            
+                <nav>
+                    <ul>
+                        <li><a href="http://">Inicio</a></li>
+                        <li><a href="http://">Filmes</a></li>
+                        <li><a href="http://">Contato</a></li>
+                        <li><a href="http://">Personagens</a></li>
+                        <li><a href="http://">Noticias</a></li>
+                    </ul>
+                </nav><!--Menu-Mobile-->
+
+            </div><!--FIM-MENU-MOBILE-->
+
+            <div class="overlay-menu" id="overlay-menu">
+
+            </div><!--Overlay-Menu-->
+        </div><!--Interface-->
     </header>
     <section class="banner"><img src="imagens/banner.jpg" alt=""></section>
     <section class="character">
-        <img src="imagens/homem-de-ferro.jpg" alt="Homem de Ferro">
+        <img src="imagens/homem-de-ferro.jpg" alt="Homem de Ferro"> 
+        
         <div class="character-info">
-            <h2>Homem de Ferro</h2>
-            <p>Tony Stark, um brilhante empresário e engenheiro, herda a Stark Industries, uma empresa de tecnologia e  armamentos. Sua vida toma um rumo dramático quando ele é capturado por terroristas e forçado a construir uma arma de destruição em massa. Em vez disso, Stark utiliza sua inteligência para criar uma armadura   poderosa, não apenas para escapar, mas para se tornar o vigilante tecnologicamente avançado conhecido como Homem de Ferro. </p>
-            <p>Poderes: Inteligência excepcional, armadura tecnologicamente avançada.</p>
+           
+            <h2>HOMEM DE FERRO</h2>
+            <a class="button" href="https://www.marvel.com/characters/iron-man-tony-stark">Saiba mais</a>
+        
+            <p> <strong>História:</strong> </p>
+
+            <p> Stark é um industrialista, inventor e playboy milionário. Ele herda a Stark Industries, uma empresa
+                de tecnologia avançada, após a morte de seu pai, Howard Stark.
+                Durante a Guerra do Vietnã, Stark é capturado por terroristas que o forçam a construir uma arma de
+                destruição em massa. Em vez disso, ele cria uma armadura para escapar, dando início à sua transformação
+                em Homem de Ferro.
+                Ao retornar aos Estados Unidos, Stark aprimora a armadura, tornando-se o super-herói conhecido como
+                Homem de Ferro. Ele usa sua tecnologia para combater ameaças globais e proteger o mundo. </p>
+            <p><strong>Características do Personagem:</strong></p>
+            <p><strong>Armamento Avançado:</strong> A armadura do Homem de Ferro é equipada com uma variedade de armas
+                poderosas, desde repulsores de mão até mísseis e lasers.</p>
+            <p><strong>Genialidade Tecnológica:</strong> Tony Stark é um gênio inventor, com um intelecto que o coloca
+                entre os maiores mentes do universo Marvel. Ele está constantemente desenvolvendo novas tecnologias para
+                aprimorar sua armadura e enfrentar desafios.</p>
+            <p><strong>Identidade Secreta:</strong> Inicialmente, Stark mantém sua identidade como Homem de Ferro em
+                segredo, mas eventualmente revela sua verdadeira identidade ao público.</p>
+            <p><strong>Problemas de Saúde:</strong> Nos quadrinhos, Tony Stark lida com problemas de saúde, incluindo o
+                fato de ter estilhaços de metal próximos ao seu coração. Isso o leva a depender de um reator arc em sua
+                armadura para mantê-lo vivo.</p>
+            <p><strong>Membro dos Vingadores:</strong> Homem de Ferro é um membro fundador dos Vingadores, uma equipe de
+                super-heróis da Marvel que se unem para combater ameaças que nenhum deles poderia enfrentar sozinho.</p>
+            <p><strong>Desenvolvimento de Caráter:</strong> Ao longo das histórias, o personagem de Tony Stark passa por
+                um desenvolvimento significativo. Ele enfrenta desafios pessoais, luta contra seus próprios demônios e
+                evolui como herói e líder.</p>
         </div>
     </section>
 
     <section class="character">
         <img src="imagens/capitão america.jpg" alt="Capitão América">
         <div class="character-info">
-            <h2>Capitão América</h2>
-            <p>O experimento, destinado a criar super-soldados, transformou Steve Rogers em uma versão aprimorada de si mesmo. Sua força, agilidade e resistência foram elevadas ao ápice humano. Equipado com um escudo feito de vibranium, o Capitão América emergiu como uma arma formidável contra as forças do Eixo. Sua primeira
-                missão foi derrotar o vilão Caveira Vermelha, um agente nazista com ambições de dominação mundial.</p>
-            <p>Poderes: Força sobre-humana, agilidade, escudo indestrutível.</p>
+            <h2>CAPITÃO AMÉRICA</h2>
+            <a class="button" href="https://www.marvel.com/characters/captain-america-steve-rogers">Saiba mais</a>
+
+            <p><strong>História:</strong></p>
+            <p>Steve Rogers, o alter ego do Capitão América, era originalmente um jovem franzino e fisicamente frágil
+                que desejava servir seu país na luta contra os nazistas durante a Segunda Guerra Mundial. Ele se
+                voluntariou para um programa experimental chamado "Super-Soldado", liderado pelo Dr. Abraham Erskine.
+                Como resultado do experimento, Rogers foi transformado em um super soldado, adquirindo força
+                sobre-humana, agilidade e resistência. </p>
+            <p>Capitão América foi inicialmente concebido como um soldado de propaganda, estrelando em histórias em
+                quadrinhos e ilustrações que visavam mobilizar o apoio popular à guerra. No entanto, sua popularidade
+                cresceu rapidamente, e ele se tornou um membro fundador dos Vingadores, um grupo de super-heróis da
+                Marvel que lutam para proteger o mundo contra ameaças cósmicas e terrestres.</p>
+            <p><strong>Características do Personagem:</strong></p>
+            <p><strong>Escudo Vibranium:</strong> O Capitão América é conhecido por seu icônico escudo circular feito de
+                vibranium, um metal fictício que absorve vibrações. O escudo não só serve como uma arma defensiva
+                impenetrável, mas também pode ser usado como um arremesso de alta precisão.</p>
+            <p><strong>Habilidades Físicas Aprimoradas:</strong> Devido ao soro do Super-Soldado, o Capitão América
+                possui força sobre-humana, resistência, agilidade e velocidade.</p>
+            <p><strong>Liderança:</strong> Steve Rogers é frequentemente retratado como um líder habilidoso e
+                inspirador. Sua experiência militar e seu comprometimento com os valores éticos tornam-no um líder
+                natural entre os super-heróis.</p>
+            <p><strong>Luta Habilidosa:</strong> O Capitão América é um mestre em várias formas de combate corpo a
+                corpo, com habilidades de luta aprimoradas ao longo dos anos.</p>
+            <p><strong>Longevidade:</strong> Devido ao soro do Super-Soldado, o Capitão América envelhece mais
+                lentamente do que os humanos normais, permitindo-lhe manter sua juventude e vitalidade por um período
+                estendido.</p>
         </div>
     </section>
 
     <section class="character">
         <img src="imagens/capitamarvel.jpg" alt="Capitã Marvel">
         <div class="character-info">
-            <h2>Capitã Marvel</h2>
-            <p>Carol Danvers se tornou a Capitã Marvel após um incidente com uma máquina alienígena chamada Psyche-Magnitron. Durante uma batalha entre o Capitão Marvel e o vilão Yon-Rogg, Danvers foi atingida
-                pela explosão do dispositivo, fundindo seu DNA com o de Mar-Vell e concedendo a ela poderes sobre-humanos. Esse evento marcou o início de uma nova fase em sua vida, transformando-a em uma das heroínas mais poderosas do universo Marvel.</p>
-            <p>Poderes: Força sobre-humana, agilidade, velocidade aprimorada, resistência a danos físicos e uma capacidade de regeneração acelerada. </p>
+            <h2>CAPITÃ MARVEL</h2>
+            <a class="button" href="https://www.marvel.com/characters/captain-marvel-carol-danvers">Saiba mais</a>
+            <p><strong>História:</strong></p>
+            <p>A Capitã Marvel da Marvel Comics é um personagem que passou por várias encarnações ao longo dos anos.
+            Uma das versões mais proeminentes e conhecidas é Carol Danvers, que assumiu o manto da Capitã Marvel.</p>
+            <p><strong>Características do Personagem:</strong></p>
+            <p><strong>Primeira Aparição:</strong> Carol Danvers fez sua primeira aparição na Marvel Comics como a oficial da Força Aérea dos EUA em "Marvel Super-Heroes" #13 em março de 1968.</p>
+            <p><strong>Ms. Marvel:</strong> A Capitã Marvel possui uma série de habilidades sobre-humanas, incluindo superforça, voo, durabilidade aumentada e a capacidade de absorver e manipular energia.</p>
+            <p><strong>Warbird:</strong> Mais tarde, Carol adotou o nome Warbird enquanto enfrentava desafios pessoais e lutava contra o alcoolismo.</p>
+            <p><strong>Retorno como Capitã Marvel:</strong> Em 2012, a personagem retornou como Capitã Marvel, homenageando o antigo Capitão Marvel (Mar-Vell), um Kree original.</p>
+            <p><strong>História de Origem:</strong> A história de origem de Carol Danvers tem sido revisitada e expandida ao longo dos anos, incluindo elementos de sua infância, carreira militar e interações com personagens como Mar-Vell.</p>
+
         </div>
     </section>
 
     <section class="character">
         <img src="imagens/homemformiga.webp" alt="Homem-Formiga">
         <div class="character-info">
-            <h2>Homem-Formiga</h2>
-            <p>O alter ego por trás da icônica roupa do Homem-Formiga é o Dr. Henry Pym, um brilhante bioquímico que descobre uma substância que lhe confere a capacidade de alterar seu tamanho. Com sua invenção revolucionária, chamada de Partículas Pym, Pym consegue encolher até o tamanho de uma formimpressionantes. Ao lado de sua parceira e eventual esposa, Janet Van Dyne, que assume o papel da Vespa, o Homem-Formiga se torna parte fundamental dos Vingadores, a equipe de super-heróis da Marvel.</p>
-            <p>Poderes: Encolhimento, força, agilidade, aptidão para controlar formigas.</p>
+            <h2>HOMEM-FORMIGA</h2>
+            <a class="button" href="https://www.marvel.com/characters/ant-man-scott-lang">Saiba mais</a>
+            <p><strong>História:</strong></p>
+            <p>O Homem-Formiga é um personagem da Marvel Comics que possui uma longa história e várias encarnações ao longo dos anos. O personagem foi criado por Stan Lee, Larry Lieber e Jack Kirby, e fez sua primeira aparição em "Tales to Astonish" #27, em janeiro de 1962.</p>
+
+                <p>O Homem-Formiga original é o cientista Dr. Henry Pym. Ele desenvolveu uma fórmula que lhe permitia encolher de tamanho e, ao mesmo tempo, aumentar sua força. Além disso, ele também desenvolveu um capacete que lhe permitia se comunicar com formigas e controlá-las. Dr. Pym usou suas habilidades para se tornar o super-herói Homem-Formiga.</p>
+                
+                <p>Ao longo dos anos, Hank Pym teve várias identidades heroicas, incluindo o Homem-Formiga, o Gigante, o Golias e o Jaqueta Amarela. Ele também é um dos membros fundadores dos Vingadores nos quadrinhos da Marvel.</p>
+                                
+                <p> Além de Hank Pym, outros personagens assumiram o manto do Homem-Formiga. O mais notável é Scott Lang, um ladrão que, em uma tentativa de redenção, rouba o traje e as partículas Pym para salvar a vida de sua filha. Scott Lang se tornou um membro valioso dos Vingadores e tem sua própria história como Homem-Formiga nos quadrinhos.</p>
+            <p><strong>Características do Personagem</strong></p>
+            <p><strong>Encolhimento:</strong> A principal habilidade do Homem-Formiga é a capacidade de encolher seu tamanho a níveis subatômicos. Isso é possível graças às Partículas Pym, uma substância criada por Hank Pym.</p>
+            <p><strong>Aumento de força:</strong>Apesar de encolher, o Homem-Formiga mantém a mesma força física, o que o torna proporcionalmente mais forte em relação ao seu tamanho reduzido.</p>
+            <p><strong>Comunicação com Formigas:</strong>O Homem-Formiga possui um capacete especial que lhe permite se comunicar e controlar formigas. Ele pode dar comandos às formigas e usá-las em diversas situações, seja para reconhecimento, transporte ou combate.</p>
+            <p><strong>Capacete com Antenas:</strong>Além de permitir a comunicação com formigas, o capacete do Homem-Formiga fornece proteção e possui antenas que são vitais para suas habilidades de controle.</p>
         </div>
     </section>
 
     <section class="character">
         <img src="imagens/panteranegra.jpg" alt="Pantera Negra">
         <div class="character-info">
-            <h2>Pantera Negra</h2>
-            <p>A história do Pantera Negra está intrinsecamente ligada à ascensão ao trono de Wakanda. Após a morte de seu pai, T'Challa assume a responsabilidade de liderar sua nação, tornando-se simultaneamente o soberano e o lendário protetor, o Pantera Negra. Sua ascensão não é apenas um título real, mas uma posição de
-                grande importância, já que Wakanda é frequentemente alvo de ameaças externas devido à valiosa commodity
-                que possui.</p>
-            <p>Poderes: Traje feito de vibranium, força e durabilidade sobre-humanas.</p>
+            <h2>PANTERA NEGRA</h2>
+            <a class="button" href="https://www.marvel.com/characters/black-panther-t-challa">Saiba mais</a>
+            <p><strong>História:</strong></p>
+            <p>T'Challa é o filho do rei T'Chaka, o Pantera Negra anterior. Ele herdou o manto e as responsabilidades do Pantera Negra após a morte de seu pai. Como monarca de Wakanda, T'Challa é responsável por proteger seu povo e manter o equilíbrio entre a tradição e a modernidade. Ele é frequentemente retratado como um líder sábio e respeitado. Wakanda é a única fonte conhecida de Vibranium no mundo. Este metal é excepcionalmente resistente e possui propriedades únicas, sendo usado para criar a icônica roupa do Pantera Negra, conhecida como o Traje de Vibranium. O Pantera Negra não possui superpoderes, mas é um atleta, acrobata e combatente excepcionalmente habilidoso. Além disso, ele consome uma erva especial em forma de coração de Wakanda, chamada Erva em forma de coração, que concede habilidades sobrenaturais, incluindo força aprimorada, velocidade, resistência, sentidos aguçados e reflexos rápidos.</p>
+               
+            <p><strong>Características do Personagem</strong></p>
+            <p><strong>Traje de Vibranium:</strong> O traje do Pantera Negra é feito de Vibranium, o que o torna virtualmente indestrutível. Ele também possui garras retráteis feitas do mesmo metal, que podem cortar através de praticamente qualquer substância.</p>
+            <p><strong>Habilidades Físicas Aprimoradas:</strong> A Erva em forma de coração concede ao Pantera Negra força sobre-humana, agilidade, velocidade e resistência. Ele é um combatente formidável, capaz de enfrentar vários oponentes simultaneamente.</p>
+            <p><strong>Sentidos Aguçados:</strong> Os sentidos do Pantera Negra são aprimorados para níveis sobre-humanos. Ele pode ver no escuro, ouvir sons imperceptíveis para os humanos comuns e sentir a presença de objetos ou pessoas a uma grande distância.</p>
+            <p><strong>Conexão Espiritual:</strong> T'Challa também possui uma conexão espiritual com os antigos Panteras Negras e outros reis de Wakanda. Essa conexão lhe proporciona sabedoria e orientação.</p>
         </div>
     </section>
 
     <section class="character">
         <img src="imagens/thor.webp" alt="Thor">
         <div class="character-info">
-            <h2>Thor</h2>
-            <p>Thor, uma figura mitológica e também um dos mais proeminentes super-heróis da Marvel Comics, tem suas raízes profundamente entrelaçadas na mitologia nórdica. Filho de Odin, o poderoso deus do trovão, e herdeiro do reino celestial de Asgard, Thor é conhecido por sua força sobre-humana, destreza em combate e seu martelo encantado, o Mjolnir.</p>
-            <p>Poderes: Martelo Mjolnir.</p>
+            <h2>THOR</h2>
+            <a class="button" href="https://www.marvel.com/characters/thor-thor-odinson">Saiba mais</a>
+
+            <p><strong>História:</strong></p>
+            <p>T'Challa é o filho do rei T'Chaka, o Pantera Negra anterior. Ele herdou o manto e as responsabilidades do Pantera Negra após a morte de seu pai. Como monarca de Wakanda, T'Challa é responsável por proteger seu povo e manter o equilíbrio entre a tradição e a modernidade. Ele é frequentemente retratado como um líder sábio e respeitado. Wakanda é a única fonte conhecida de Vibranium no mundo. Este metal é excepcionalmente resistente e possui propriedades únicas, sendo usado para criar a icônica roupa do Pantera Negra, conhecida como o Traje de Vibranium. O Pantera Negra não possui superpoderes, mas é um atleta, acrobata e combatente excepcionalmente habilidoso. Além disso, ele consome uma erva especial em forma de coração de Wakanda, chamada Erva em forma de coração, que concede habilidades sobrenaturais, incluindo força aprimorada, velocidade, resistência, sentidos aguçados e reflexos rápidos.</p>
+               
+            <p><strong>Características do Personagem:</strong></p>
+            <p><strong>Força sobre-humana:</strong> Thor possui uma força física imensa, tornando-o um dos heróis mais fortes do Universo Marvel.
+            </p>
+            <p><strong>Durabilidade:</strong> Ele é praticamente invulnerável a ferimentos convencionais e resiste a uma série de ataques, incluindo balas, explosões e até mesmo alguns ataques mágicos.</p>
+            <p><strong>Longevidade:</strong> Como um deus, Thor possui uma vida extremamente longa e envelhece a uma taxa muito mais lenta do que os humanos.</p>
+            <p><strong>Controle sobre o clima:</strong> Thor tem o poder de controlar os elementos, especialmente o clima. Ele pode convocar tempestades, relâmpagos e até mesmo causar terremotos.</p>
+            <p><strong>Voo:</strong>Com o auxílio de Mjolnir, Thor pode voar a grandes velocidades.</p>
+            <p><strong>Manipulação de Energia:</strong>Thor pode manipular e canalizar diversas formas de energia, incluindo energia mágica e cósmica.</p>
+            <p><strong>Controle de Mjolnir:</strong>O martelo Mjolnir é uma parte essencial dos poderes de Thor. Além de ser uma arma extremamente poderosa, Mjolnir retorna sempre que Thor o convoca, e ele pode controlar a trajetória do martelo com precisão.</p>
+            <p><strong>Transformação de Identidade:</strong>Thor pode transformar sua aparência humana de Donald Blake para sua forma divina quando empunha Mjolnir.</p>
+            <p><strong>Imunidade a encantamento e feitiços:</strong>Thor possui uma considerável resistência a magias e encantamentos, tornando-o mais difícil de ser afetado por manipulações mágicas.</p>
+            <p><strong>Inteligência:</strong>Além de sua força física, Thor é um estrategista habilidoso e possui uma inteligência notável.</p>
         </div>
     </section>
-</body>
+
+    <section class="character">
+        <img src="imagens/Loki.jpg" alt="Loki">
+        <div class="character-info">
+            <h2>LOKI</h2>
+            <a class="button" href="https://www.marvel.com/characters/loki">Saiba mais</a>
+
+            <p><strong>História:</strong></p>
+            <p>Loki é um dos deuses asgardianos, nascido de Laufey, rei dos gigantes de gelo, mas foi adotado por Odin, rei de Asgard, após a vitória de Odin sobre os gigantes de gelo. Crescendo ao lado de Thor, Loki sempre sentiu uma certa rivalidade com seu irmão mais velho e nutriu um desejo constante de provar que era tão digno quanto Thor de ocupar o trono de Asgard. </p>
+
+            <p>O personagem é conhecido por sua astúcia e habilidades mágicas. Ao longo dos anos, Loki alternou entre papéis de vilão e anti-herói nas histórias em quadrinhos, muitas vezes servindo como um adversário formidável para Thor e os Vingadores. Suas artimanhas e traições são uma marca registrada do personagem, tornando-o um dos antagonistas mais icônicos do Universo Marvel.</p>
+               
+            <p><strong>Características do Personagem:</strong></p>
+            <p><strong>Magia:</strong> Loki é um feiticeiro habilidoso, com um vasto conhecimento de magia asgardiana. Ele pode realizar feitiços poderosos, criar ilusões e até mesmo mudar de forma, assumindo a aparência de outras pessoas ou objetos.</p>
+            <p><strong>Intelecto:</strong> Além de suas habilidades mágicas, Loki é incrivelmente inteligente e astuto. Ele é um estrategista brilhante e muitas vezes usa sua mente afiada para superar seus inimigos.</p>
+            <p><strong>Manipulação:</strong> Uma das características mais marcantes de Loki é sua habilidade de manipulação. Ele é um mestre em enganar os outros, frequentemente tramando intrincados planos para alcançar seus objetivos, mesmo que isso signifique semear o caos.</p>
+            <p><strong>Rivalidade com Thor:</strong> A relação complexa entre Loki e Thor é uma parte fundamental da história do personagem. Embora haja momentos em que eles colaboram, a rivalidade fraternal é uma constante, criando dinâmicas emocionais interessantes.</p>
+            <p><strong>Transformações:</strong> Loki pode alterar sua aparência física, assumindo diferentes formas. Isso o torna um mestre da disfarce e contribui para suas tramas enganosas.</p>
+          
+            </div>
+    </section>
+
+    <section class="character">
+        <img src="imagens/homemaranha.jpg" alt="Visão">
+        <div class="character-info">
+            <h2>HOMEM-ARANHA</h2>
+            <a class="button" href="https://www.marvel.com/characters/spider-man-peter-parker">Saiba mais</a>
+
+            <p><strong>História:</strong></p>
+            <p>Peter Parker era um estudante brilhante, mas socialmente desajeitado, quando foi mordido por uma aranha radioativa durante uma exposição científica. Após o incidente, ele desenvolveu habilidades extraordinárias, incluindo força proporcional a de uma aranha, agilidade sobre-humana, reflexos rápidos e a habilidade de grudar em superfícies. Peter inicialmente usa suas habilidades para ganhar dinheiro como lutador de wrestling, mas após a morte trágica de seu tio Ben devido a um crime que ele poderia ter impedido, ele assume a responsabilidade de combater o crime como o Homem-Aranha.</p>
+                        
+            <p><strong>Características do Personagem:</strong></p>
+
+            <p><strong>Força Sobre-Humana: </strong> O Homem-Aranha possui uma força proporcional à de uma aranha, permitindo-lhe levantar cargas pesadas e enfrentar adversários formidáveis.</p>
+            <p><strong>Agilidade e Reflexos: </strong> Sua agilidade e reflexos extraordinários tornam-no extremamente ágil, permitindo-lhe esquivar-se de ataques e se movimentar rapidamente pelo ambiente urbano.</p>
+            <p><strong>Sentido Aranha: </strong> Peter Parker possui o "Sentido Aranha", um instinto aguçado que o alerta sobre perigos iminentes, mesmo antes de acontecerem. Isso contribui para sua habilidade de antecipar e evitar ameaças.</p>
+            <p><strong>Inteligência: </strong> Além de suas habilidades físicas, Peter Parker é retratado como um gênio científico. Ele é um estudante universitário brilhante e um inventor talentoso, muitas vezes criando dispositivos e tecnologia avançada para auxiliá-lo em suas atividades como Homem-Aranha.</p>
+            <p><strong>Identidade Secreta:</strong> Uma característica distintiva do Homem-Aranha é sua identidade secreta como Peter Parker. Ele enfrenta desafios ao equilibrar sua vida pessoal e suas responsabilidades como super-herói, frequentemente lidando com dilemas éticos e emocionais.</p>
+            </div>
+    </section>
+    
+    
+    <section class="character">
+        <img src="imagens/Venom.jpg" alt="Visão">
+        <div class="character-info">
+            <h2>VENOM</h2>
+            <a class="button" href="https://www.marvel.com/characters/venom-eddie-brock">Saiba mais</a>
+
+            <p><strong>História:</strong></p>
+            <p>A história original de Venom começa com Eddie Brock, um jornalista que se torna o hospedeiro do simbionte alienígena conhecido como Venom. Antes de se unir a Eddie, o simbionte estava ligado a Peter Parker, o Homem-Aranha. No entanto, Peter conseguiu se livrar do simbionte devido às suas tendências agressivas e, consequentemente, o simbionte desenvolveu um rancor contra o Homem-Aranha.</p>
+            <p>Eddie Brock, por sua vez, estava passando por um momento difícil em sua carreira e vida pessoal quando se uniu ao simbionte. A fusão dos dois resultou em Venom, uma criatura com habilidades sobre-humanas, incluindo força aumentada, agilidade, capacidade de se camuflar e a habilidade de se estender e formar apêndices como garras.</p>
+            <p>Venom tornou-se um anti-herói, muitas vezes agindo como vigilante e, ocasionalmente, enfrentando vilões mais ameaçadores. A relação entre Eddie Brock e o simbionte é complexa, alternando entre momentos de cooperação e conflito.</p>
+            <p>Ao longo dos anos, outros personagens também assumiram o manto de Venom, incluindo Mac Gargan (o Escorpião) e Flash Thompson. Cada hospedeiro trouxe nuances diferentes à personalidade e à dinâmica de Venom.</p>
+                        
+            <p><strong>Características do Personagem:</strong></p>
+
+            <p><strong>Simbionte Alienígena: </strong> Venom é um simbionte alienígena proveniente do planeta Klyntar. Ele precisa de um hospedeiro para sobreviver, fundindo-se com o corpo do hospedeiro para formar Venom.</p>
+            <p><strong>Força e Habilidades Físicas Aprimoradas: </strong> O hospedeiro de Venom ganha força sobre-humana, resistência aumentada, agilidade aprimorada e sentidos ampliados.</p>
+            <p><strong>Criação de Teia: </strong> Assim como o Homem-Aranha, Venom é capaz de criar teias orgânicas para se locomover.</p>
+            <p><strong>Camuflagem: </strong> AVenom pode se camuflar, tornando-se invisível para os sentidos humanos.</p>
+            <p><strong>Habilidade de Estender e Formar Apêndices:</strong> Venom pode estender seus membros para atacar ou se defender.</p>
+            </div>
+    </section>
+
+    <section class="character">
+        <img src="imagens/doutor estranho.jpg" alt="Doutor Estranho">
+        <div class="character-info">
+            <h2>DOUTOR ESTRANHO</h2>
+            <a class="button" href="https://www.marvel.com/characters/doctor-strange-stephen-strange">Saiba mais</a>
+
+            <p><strong>História:</strong></p>
+            <p>Stephen Strange era um cirurgião bem-sucedido, arrogante e egoísta. Sua vida muda drasticamente após um acidente de carro que danifica suas mãos, impedindo-o de continuar sua carreira médica. Desesperado, ele gasta sua fortuna em busca de uma cura, viajando pelo mundo. Ele acaba encontrando o Ancião, um poderoso feiticeiro em Kamar-Taj, no Himalaia, que o treina nas artes místicas.</p>
+
+            <p>Ao longo de sua jornada, o Doutor Estranho se torna o Mago Supremo, o principal defensor da Terra contra ameaças místicas e cósmicas. Ele protege a realidade contra entidades sobrenaturais e utiliza suas habilidades místicas para manter o equilíbrio entre as forças do bem e do mal.</p>
+               
+            <p><strong>Características do Personagem:</strong></p>
+            <p><strong>Manipulação de Magia:</strong> O Doutor Estranho é um feiticeiro habilidoso e pode manipular energias místicas para realizar uma variedade de feitos. Ele pode lançar feitiços, criar escudos místicos e manipular a realidade ao seu redor.</p>
+            <p><strong>Viagem Dimensional:</strong> Estranho é capaz de viajar entre diferentes dimensões e planos de existência. Isso permite que ele acesse locais mágicos e enfrente ameaças de outras realidades.</p>
+            <p><strong>Projeção Astral:</strong> Ele pode projetar sua forma astral, separando sua consciência do corpo. Isso é útil para investigar ou lutar em situações em que seu corpo físico não pode estar presente.</p>
+            <p><strong>Telepatia e Telecinese:</strong> Estranho possui habilidades telepáticas e telecinéticas, permitindo-lhe se comunicar mentalmente e mover objetos com a mente.</p>
+            <p><strong>Manipulação do Tempo:</strong> UEm algumas histórias, o Doutor Estranho demonstrou a capacidade de manipular o tempo, seja retrocedendo, avançando ou parando.</p>
+            <p><strong>Magia de Cura:</strong> Ele pode usar a magia para curar ferimentos e doenças, embora esse aspecto de seus poderes varie nas diferentes histórias.</p>
+            <p><strong>Conhecimento Arcano:</strong> Estranho é um erudito em magia e possui vasto conhecimento sobre artefatos místicos, criaturas sobrenaturais e rituais arcanos.</p>
+            
+        </div>
+    </section>
+
+    <section class="character">
+        <img src="imagens/feiticeira escarlate.jpg" alt="Feiticeira Escarlate">
+        <div class="character-info">
+            <h2>FEITICEIRA ESCARLATE</h2>
+            <a class="button" href="https://www.marvel.com/characters/scarlet-witch-wanda-maximoff">Saiba mais</a>
+
+            <p><strong>História:</strong></p>
+            <p>Wanda Maximoff nasceu na Europa Oriental, juntamente com seu irmão gêmeo, Pietro Maximoff, o Mercúrio. Eles eram inicialmente membros da Irmandade de Mutantes, liderada por Magneto, o mestre do magnetismo e pai deles (embora essa relação tenha sido alterada ao longo das histórias). Mais tarde, os irmãos se uniram aos Vingadores, onde Wanda se destacou como Feiticeira Escarlate. A história de Wanda envolve eventos dramáticos, como a perda de seus filhos mágicos, causados por manipulações da realidade que ela própria realizou. Ela também foi fundamental em eventos como "A Queda dos Vingadores" e "Dinastia M", onde alterou drasticamente a realidade para criar um mundo onde os mutantes eram a raça dominante. Além disso, Wanda está conectada à magia e ao caos, sendo considerada uma das feiticeiras mais poderosas do universo Marvel. Sua ligação com o Visão, um androide sintezóide, também é um aspecto importante de sua história.</p>
+
+            <p>A história de Wanda envolve eventos dramáticos, como a perda de seus filhos mágicos, causados por manipulações da realidade que ela própria realizou. Ela também foi fundamental em eventos como "A Queda dos Vingadores" e "Dinastia M", onde alterou drasticamente a realidade para criar um mundo onde os mutantes eram a raça dominante.</p>
+
+            <p>Além disso, Wanda está conectada à magia e ao caos, sendo considerada uma das feiticeiras mais poderosas do universo Marvel. Sua ligação com o Visão, um androide sintezóide, também é um aspecto importante de sua história.</p>
+               
+            <p><strong>Características do Personagem:</strong></p>
+
+            <p><strong>Manipulação da Realidade:</strong> A habilidade mais marcante da Feiticeira Escarlate é sua capacidade de alterar a realidade. Ela pode moldar o tecido da existência de acordo com sua vontade, muitas vezes sem entender completamente as consequências de seus atos.</p>
+            <p><strong>Feitiçaria e Magia:</strong> Wanda é uma usuária habilidosa de magia, sendo treinada por personagens como Agatha Harkness e Doutor Estranho. Seus poderes mágicos incluem lançamento de feitiços, manipulação de energia mística e comunicação com entidades místicas.</p>
+            <p><strong>Telepatia e Telecinese:</strong> Além de sua magia, a Feiticeira Escarlate também possui habilidades telepáticas e telecinéticas. Ela pode ler mentes, influenciar pensamentos e movimentar objetos com sua mente.</p>
+            <p><strong>Ligação com o Visão:</strong> Wanda teve um relacionamento significativo com o Visão, um androide dotado de inteligência artificial e sensibilidade emocional. Eles se casaram e tiveram filhos mágicos, mas a tragédia os cercou</p>
+            </div>
+    </section>
+
+    
+    <section class="character">
+        <img src="imagens/visão.jpg" alt="Visão">
+        <div class="character-info">
+            <h2>VISÃO</h2>
+            <a class="button" href="https://www.marvel.com/characters/vision">Saiba mais</a>
+
+            <p><strong>História:</strong></p>
+            <p>A história do Visão está profundamente entrelaçada com a inteligência artificial criada por Ultron, um vilão robótico que buscava destruir os Vingadores. Ultron construiu o Visão originalmente como uma arma para enfrentar os heróis, usando a essência do herói humano, o Tocha Humana Android, e combinando-a com o material sintético de seu próprio corpo.</p>
+
+            <p>O Visão, no entanto, rebelou-se contra seu criador e uniu-se aos Vingadores. Ele se tornou um membro valioso da equipe, lutando ao lado de heróis como Homem de Ferro, Thor e Capitão América. A série de quadrinhos "Visão e a Feiticeira Escarlate" explorou seu relacionamento com a Feiticeira Escarlate, culminando em casamento.</p>
+
+            <p>A história do Visão teve muitos altos e baixos, com momentos de traição, morte e ressurreição. Sua complexidade como um androide com emoções humanas adicionou profundidade ao personagem ao longo dos anos.</p>
+               
+            <p><strong>Características do Personagem:</strong></p>
+
+            <p><strong>Superpoderes Tecnológicos:</strong> O Visão possui uma série de habilidades sobre-humanas, incluindo força sobre-humana, velocidade, durabilidade e capacidade de voo. Ele também possui a capacidade de projetar raios de energia através de uma joia em sua testa.</p>
+            <p><strong>Inteligência Artificial Avançada:</strong> Como um androide, o Visão é dotado de uma inteligência artificial avançada. Isso o torna um estrategista habilidoso e um pensador lógico.</p>
+            <p><strong>Corpo Sintético:</strong> Seu corpo é feito de um material sintético indestrutível chamado "adamantium," tornando-o resistente a muitas formas de danos.</p>
+            <p><strong>Capacidade de Intangibilidade:</strong> WUma das habilidades únicas do Visão é a capacidade de tornar-se intangível, permitindo que ele atravesse objetos sólidos.</p>
+            <p><strong>Relacionamentos Complexos:</strong> A dinâmica emocional do Visão, especialmente em relação à Feiticeira Escarlate e outros membros dos Vingadores, acrescenta camadas fascinantes à sua personalidade robótica.</p>
+
+            </div>
+    </section>
+    <section class="character">
+        <img src="imagens/viúva negra.jpg" alt="Visão">
+        <div class="character-info">
+            <h2>VIÚVA NEGRA</h2>
+            <a class="button" href="https://www.marvel.com/characters/black-widow-natasha-romanoff">Saiba mais</a>
+
+            <p><strong>História:</strong></p>
+            <p>A história da Viúva Negra é complexa e envolve uma série de reviravoltas, traições e redenções. Ela nasceu na União Soviética e foi treinada desde jovem na Sala Vermelha, um programa secreto de treinamento de espiãs. Natasha se destacou nas habilidades de combate, espionagem e manipulação. Durante sua carreira como espiã, ela trabalhou para organizações como a KGB e, em um ponto, teve um encontro com o Homem de Ferro, Tony Stark.</p>
+
+            <p>Ao longo dos anos, Natasha mudou de lado e se juntou à S.H.I.E.L.D. e aos Vingadores. Sua complexidade como personagem vem da sua luta constante para se redimir por suas ações passadas como uma agente da KGB. Ela também teve vários relacionamentos significativos com outros heróis, incluindo o Gavião Arqueiro (Clint Barton).</p>
+
+            <p>A Viúva Negra desempenhou papéis cruciais em várias histórias dos quadrinhos da Marvel, incluindo eventos importantes como "Guerra Civil" e "Invasão Secreta". Sua natureza ambígua e sua habilidade de se adaptar a diferentes situações a tornaram uma personagem fascinante e duradoura no universo Marvel.</p>
+               
+            <p><strong>Características do Personagem:</strong></p>
+
+            <p><strong>SHabilidades de Combate:</strong> Natasha é uma mestra em várias formas de artes marciais e é habilidosa no uso de armas de fogo e equipamentos de espionagem. Sua agilidade, força e reflexos a colocam no mesmo nível de muitos super-humanos.</p>
+            <p><strong>Espionagem e Infiltração:</strong>Como uma espiã altamente treinada, a Viúva Negra é especialista em espionagem, infiltração e coleta de informações. Ela é conhecida por sua astúcia e capacidade de se infiltrar em organizações inimigas.</p>
+            <p><strong>Maestria em Armas:</strong> Natasha é habilidosa no uso de várias armas, desde pistolas convencionais até dispositivos de alta tecnologia. Ela é especialmente conhecida por suas "mordidas de viúva", braceletes equipados com dispositivos tecnológicos eletrochoque.</p>
+            <p><strong>Inteligência e Estratégia:</strong> Além de suas habilidades físicas, a Viúva Negra é uma estrategista talentosa. Ela demonstrou ser capaz de pensar rapidamente e se adaptar a situações desafiadoras.</p>
+            <p><strong>Associação com os Vingadores:</strong> Natasha Romanoff é uma membra fundamental dos Vingadores, colaborando com outros super-heróis para enfrentar ameaças globais. Sua presença nos Vingadores destaca sua importância no universo Marvel.</p>
+
+            </div>
+    </section>
+
+    <section class="character">
+        <img src="imagens/hulk.jpg" alt="Visão">
+        <div class="character-info">
+            <h2>HULK</h2>
+            <a class="button" href="https://www.marvel.com/characters/hulk-bruce-banner">Saiba mais</a>
+
+            <p><strong>História:</strong></p>
+            <p>Bruce Banner era um cientista brilhante, mas sua vida mudou dramaticamente quando foi atingido por uma explosão de radiação gama enquanto tentava salvar um adolescente que estava dentro do alcance da bomba. Em vez de morrer, Banner foi transformado pelo incidente. Agora, sempre que ele fica com raiva ou sob estresse, sua transformação no Hulk ocorre. O Hulk é uma representação amplificada dos traços de personalidade de Banner, intensificados para proporções incríveis.</p>
+
+            <p>Ao longo dos anos, o Hulk passou por várias encarnações e mudanças na personalidade. Inicialmente retratado como uma criatura selvagem e incontrolável, o personagem evoluiu para apresentar diferentes nuances emocionais. Além do Hulk verde, que é o mais comum, houve variações, como o Hulk Cinza e o Hulk Vermelho.</p>
+
+            <p>Bruce Banner tem lutado para controlar a fúria do Hulk e, muitas vezes, tenta encontrar uma cura para sua condição. No entanto, a dualidade entre Banner e o Hulk é uma parte central da narrativa, com ambos os personagens enfrentando desafios e inimigos únicos.</p>
+               
+            <p><strong>Características do Personagem:</strong></p>
+
+            <p><strong>Força sobre-humana: </strong> O Hulk é conhecido por sua incrível força física, que aumenta proporcionalmente à sua raiva. Ele é frequentemente retratado como um dos seres mais fortes no Universo Marvel.</p>
+            <p><strong>Resistência: </strong>  O Hulk possui uma incrível resistência a danos físicos. Ele pode suportar ataques poderosos e se recuperar rapidamente de ferimentos que seriam fatais para um ser humano comum.</p>
+            <p><strong>Regeneração: </strong> SSua capacidade de regeneração é notável, permitindo-lhe curar ferimentos e lesões em um ritmo acelerado.</p>
+            <p><strong>Invulnerabilidade:</strong> O Hulk é praticamente invulnerável a muitos tipos de danos, incluindo balas, calor extremo e até mesmo ataques de alguns super-seres.</p>
+            <p><strong>Personalidades diferentes:  </strong> Dependendo da história, o Hulk pode ter personalidades distintas, variando de uma criatura incontrolável a uma figura mais racional e consciente.</p>
+
+            </div>
+    </section>
+
+    <section class="character">
+        <img src="imagens/gavião arqueiro.jpg" alt="Visão">
+        <div class="character-info">
+            <h2>GAVIÃO ARQUEIRO</h2>
+            <a class="button" href="https://www.marvel.com/characters/hawkeye-clint-barton">Saiba mais</a>
+
+            <p><strong>História:</strong></p>
+            <p>Bruce Banner era um cientista brilhante, mas sua vida mudou dramaticamente quando foi atingido por uma explosão de radiação gama enquanto tentava salvar um adolescente que estava dentro do alcance da bomba. Em vez de morrer, Banner foi transformado pelo incidente. Agora, sempre que ele fica com raiva ou sob estresse, sua transformação no Hulk ocorre. O Hulk é uma representação amplificada dos traços de personalidade de Banner, intensificados para proporções incríveis.</p>
+
+            <p>Ao longo dos anos, o Hulk passou por várias encarnações e mudanças na personalidade. Inicialmente retratado como uma criatura selvagem e incontrolável, o personagem evoluiu para apresentar diferentes nuances emocionais. Além do Hulk verde, que é o mais comum, houve variações, como o Hulk Cinza e o Hulk Vermelho.</p>
+
+            <p>Bruce Banner tem lutado para controlar a fúria do Hulk e, muitas vezes, tenta encontrar uma cura para sua condição. No entanto, a dualidade entre Banner e o Hulk é uma parte central da narrativa, com ambos os personagens enfrentando desafios e inimigos únicos.</p>
+               
+            <p><strong>Características do Personagem:</strong></p>
+
+            <p><strong>Força sobre-humana: </strong> O Hulk é conhecido por sua incrível força física, que aumenta proporcionalmente à sua raiva. Ele é frequentemente retratado como um dos seres mais fortes no Universo Marvel.</p>
+            <p><strong>Resistência: </strong>  O Hulk possui uma incrível resistência a danos físicos. Ele pode suportar ataques poderosos e se recuperar rapidamente de ferimentos que seriam fatais para um ser humano comum.</p>
+            <p><strong>Regeneração: </strong> SSua capacidade de regeneração é notável, permitindo-lhe curar ferimentos e lesões em um ritmo acelerado.</p>
+            <p><strong>Invulnerabilidade:</strong> O Hulk é praticamente invulnerável a muitos tipos de danos, incluindo balas, calor extremo e até mesmo ataques de alguns super-seres.</p>
+            <p><strong>Personalidades diferentes:  </strong> Dependendo da história, o Hulk pode ter personalidades distintas, variando de uma criatura incontrolável a uma figura mais racional e consciente.</p>
+
+            </div>
+    </section>
+
+    <section class="character">
+        <img src="imagens/thanos.jpg" alt="Visão">
+        <div class="character-info">
+            <h2>THANOS</h2>
+            <a class="button" href="https://www.marvel.com/characters/thanos">Saiba mais</a>
+
+            <p><strong>História:</strong></p>
+            <p>Thanos nasceu no satélite lua de Saturno, Titã, sendo filho dos Eternos Mentor e Sui-San. Desde muito jovem, Thanos demonstrou sinais de ser um ser excepcionalmente poderoso e também exibiu traços genéticos desviantes que o tornaram fisicamente diferente dos outros Eternos. Isso causou rejeição e alienação desde a infância.</p>
+
+            <p>Motivado pelo fascínio pela morte e pela busca do poder, Thanos embarcou em uma jornada de conquista e destruição. Ele procurou acumular conhecimento e habilidades de diferentes fontes, incluindo tecnologia avançada, magia e manipulação genética. Seu objetivo final tornou-se impressionar a entidade cósmica conhecida como a Morte, a quem ele venera como uma entidade divina.</p>
+
+            <p>Thanos adquiriu grande fama e notoriedade por suas tentativas de obter o Cubo Cósmico e as Joias do Infinito, que são objetos cósmicos incrivelmente poderosos. Ele busca esses artefatos para aumentar ainda mais seu poder e, em última análise, tornar-se uma força imparável no universo.</p>
+               
+            <p><strong>Características do Personagem:</strong></p>
+
+            <p><strong>Força sobre-humana: </strong> Thanos possui força física, resistência e durabilidade sobre-humanas, o que o torna um formidável adversário em combate.</p>
+            <p><strong>Intelecto: </strong>  Ele é um estrategista brilhante e um cientista experiente, combinando força bruta com inteligência aguçada.</p>
+            <p><strong>Habilidade em combate:</strong> Thanos é um guerreiro habilidoso, proficientemente treinado em várias formas de combate corpo a corpo e armado.</p>
+            <p><strong>Invulnerabilidade:</strong> Devido à sua herança Eterna, Thanos é praticamente imortal e pode suportar ferimentos que seriam fatais para outros seres.</p>
+            <p><strong>Adoração da Morte:</strong> Sua obsessão com a Morte moldou muitos aspectos de sua personalidade e motivações, levando-o a cometer atos terríveis para agradar à entidade cósmica.</p>
+            </div>
+    </section>
+
+    <section class="character">
+        <img src="imagens/wolverine.jpeg" alt="Visão">
+        <div class="character-info">
+            <h2>WOLVERINE</h2>
+            <a class="button" href="https://www.marvel.com/characters/wolverine-james-howlett">Saiba mais</a>
+
+            <p><strong>História:</strong></p>
+            <p>A história de Wolverine é complexa e envolvente. Ele nasceu no século XIX, no Canadá, filho de Elizabeth Howlett e do jardineiro da família, Thomas Logan. Durante sua infância, Logan descobriu que tinha garras retráteis feitas de osso e habilidades regenerativas após testemunhar a morte de seu pai.</p>
+
+            <p>Ao longo dos anos, Logan participou de várias guerras, incluindo as duas Guerras Mundiais, e teve sua memória apagada várias vezes devido ao Programa Arma X, um projeto governamental que experimentou nele, revestindo seus ossos com adamantium, um metal praticamente indestrutível. Esse processo tornou suas garras ainda mais letais.</p>
+
+            <p>Wolverine é membro dos X-Men, uma equipe de mutantes que lutam pela coexistência pacífica entre mutantes e humanos. Ele também faz parte de várias outras equipes, incluindo os X-Force e os Vingadores.</p>
+               
+            <p><strong>Características do Personagem:</strong></p>
+
+            <p><strong>Fator de Cura: </strong> Wolverine possui um fator de cura regenerativo extremamente poderoso, o que lhe confere a capacidade de se recuperar rapidamente de ferimentos, doenças e envelhecimento. Esse fator de cura também impede que ele seja afetado por substâncias tóxicas ou venenos.</p>
+            <p><strong>Garras de Adamantium: </strong>  Suas garras retráteis são revestidas com adamantium, tornando-as virtualmente indestrutíveis. Essas garras são sua principal arma em combate.</p>
+            <p><strong>Sentidos Aguçados: </strong> Wolverine possui sentidos superagudos, incluindo visão, audição e olfato, o que o torna um rastreador habilidoso.</p>
+            <p><strong>Habilidade Marcial: </strong> Ele é um especialista em diversas formas de combate, incluindo artes marciais, tornando-o um oponente formidável em combates corpo a corpo.</p>
+            <p><strong>Longevidade:</strong> Devido ao seu fator de cura, Wolverine envelhece muito lentamente, o que o permite viver por um período extraordinariamente longo.</p>
+            </div>
+    </section>
+    <section class="character">
+        <img src="imagens/deadpool.jpg" alt="Deadpool">
+        <div class="character-info">
+            <h2>DEADPOOL</h2>
+            <a class="button" href="https://www.marvel.com/characters/deadpool-wade-wilson">Saiba mais</a>
+
+            <p><strong>História:</strong></p>
+            <p>Deadpool, também conhecido como Wade Wilson, é um personagem fictício da Marvel Comics que apareceu pela primeira vez em "New Mutants" #98 em 1991. Criado pelo escritor Fabian Nicieza e pelo desenhista/coescritor Rob Liefeld, Deadpool é conhecido por sua personalidade irreverente, humor negro e habilidades regenerativas extraordinárias.</p>
+               
+            <p><strong>Características do Personagem:</strong></p>
+            <p><strong>Fator de Cura:</strong> Deadpool possui um fator de cura regenerativo extremamente poderoso. Essa habilidade permite que ele se recupere rapidamente de ferimentos graves, regenerando tecidos e órgãos em um ritmo acelerado.                Esse fator de cura também retarda o envelhecimento, o que significa que Deadpool envelhece muito lentamente em comparação com os seres humanos normais.
+            </p>
+            <p><strong>Imortalidade Aparente:</strong> Devido ao seu fator de cura, Deadpool é praticamente imortal no sentido de que ele pode se recuperar de quase qualquer ferimento fatal.</p>
+            <p><strong>Perito em Artes Marciais e Habilidades de Combate:</strong> Antes de ganhar seus poderes, Wade Wilson era um habilidoso lutador e especialista em armas.
+            Ele continua a aprimorar suas habilidades de combate, tornando-se um perito em artes marciais e no uso de diversas armas.</p>
+            <p><strong>Habilidades Aumentadas:</strong> Deadpool possui sentidos ampliados, o que o torna extremamente consciente do ambiente ao seu redor.</p>
+            <p><strong>Consciência da Ficção e Quebra da Quarta Parede:</strong> Uma característica distintiva do Deadpool nos quadrinhos é sua capacidade de quebrar a quarta parede, reconhecendo que é um personagem em uma história em quadrinhos. Ele muitas vezes interage diretamente com os leitores e tem consciência de outros personagens fictícios da Marvel.</p>
+            <p><strong>Arsenal de Armas:</strong> Deadpool é conhecido por usar uma variedade de armas, incluindo espadas, facas, pistolas e armas de fogo de grande porte.</p>
+            <p><strong>Uniforme e Aparência Marcantes:</strong> O traje de Deadpool é vermelho e preto, e ele geralmente é representado usando uma máscara que cobre todo o rosto, com olhos brancos. Essa aparência icônica contribui para a identidade única do personagem.</p>
+            <p><strong>Uniforme e Aparência Marcantes:</strong> O traje de Deadpool é vermelho e preto, e ele geralmente é representado usando uma máscara que cobre todo o rosto, com olhos brancos. Essa aparência icônica contribui para a identidade única do personagem.</p>
+            </div>
+    </section>
+
+
+    <section class="character">
+        <img src="imagens/punhodeferro.jpg" alt="Visão">
+        <div class="character-info">
+            <h2>PUNHO DE FERRO</h2>
+            <a class="button" href="https://www.marvel.com/characters/iron-fist-danny-rand">Saiba mais</a>
+
+            <p><strong>História:</strong></p>
+            <p>O verdadeiro nome do Punho de Ferro é Daniel Rand, e sua história começa quando seus pais, Wendell Rand e Heather Duncan Rand, morreram em um acidente de avião nas montanhas do Tibete. O jovem Danny é resgatado por os nativos de K'un-Lun, uma mística cidade extradimensional, onde é treinado por Lei Kung, o Trovão, na arte marcial conhecida como K'un-Lun Kung Fu.</p>
+            <p>Durante o rito cerimonial do Punho de Ferro, Danny enfrenta o lendário dragão Shou-Lao, obtendo o poder do Punho de Ferro ao derrotá-lo. Esse poder lhe concede a habilidade de concentrar sua energia chi em seu punho, tornando-o virtualmente indestrutível e capaz de realizar proezas sobre-humanas.</p>
+            <p>Ao retornar a Nova York, Danny Rand assume a identidade de Punho de Ferro e se une a Luke Cage para formar a dupla conhecida como "Heróis de Aluguel". Ele também faz parte de equipes como "Os Defensores" e "Os Vingadores".</p>     
+            
+            <p><strong>Características do Personagem:</strong></p>
+
+            <p><strong>Mestre em Artes Marciais: </strong> Danny Rand é um dos maiores mestres em artes marciais no Universo Marvel. Ele é hábil em várias formas de combate corpo a corpo, incluindo kung fu, judô, boxe e muitas outras.</p>
+            <p><strong>Punho de Ferro: </strong> Sua habilidade mais distintiva é a capacidade de canalizar sua energia chi em seu punho, tornando-o tão duro quanto ferro. Isso lhe permite quebrar materiais sólidos e causar danos consideráveis aos seus oponentes.</p>
+            <p><strong>Sentido do Chi: </strong> Além do uso do Punho de Ferro, Danny Rand também desenvolve um "sentido do chi", uma espécie de intuição aumentada que o ajuda a perceber a presença de outros seres e a detectar ameaças.</p>
+            <p><strong>Longevidade: </strong> Como resultado do ritual com o dragão Shou-Lao, Danny adquire uma forma de longevidade, envelhecendo mais lentamente que os seres humanos normais.</p>
+            <p><strong>Ligação com K'un-Lun:</strong> Devido à sua conexão com a cidade mística de K'un-Lun, Danny Rand ocasionalmente se envolve em eventos relacionados ao plano extradimensional.</p>
+            </div>
+    </section>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>Links</h1>
+                <p>Algumas das páginas sociais.</p>
+  
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="bi-linkedin">
+                      <i class="bi bi-linkedin"></i>
+                    </a>
+  
+                    <a href="#" class="footer-link" id="bi-github">
+                      <i class="bi bi-github"></i>
+                    </a>
+  
+                    <a href="#" class="footer-link" id="marvel">
+                      <i class="bi bi-box-fill"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <ul class="footer-list">
+                <li>
+                    <h3>CoderHouse Brasil</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Tech</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Adventures</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=knfrxj0T5NY" class="footer-link">Music</a>
+                </li>
+            </ul>
+  
+            <ul class="footer-list">
+                <li>
+                    <h3>Desenvolvedores</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Gabriel Teodoro</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Maria Fernanda</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Marta Nascimento</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-link">Duda Carvalho</a>
+              </li>
+            </ul>
+  
+            <div id="footer_subscribe">
+                <h3>Contato</h3>
+  
+                <p>
+                    Nos envie um e-mail para dar dicas e críticas construtivas.
+                </p>
+  
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                      <i class="bi bi-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+  
+        <div id="footer_copyright">
+            &#169
+            2024 Todos os direitos reservados.
+        </div>
+      </footer>
+
+    </body>
 
 </html>
