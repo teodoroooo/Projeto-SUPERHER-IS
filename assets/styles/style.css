@@ -548,14 +548,16 @@ footer {
 }
 
 #footer_content {
-    background-color: var(--color-neutral-10);
+    background-color: var(--color-neutral-40);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
+
 }
 
-#footer_contacts h1 {
+#footer_contacts h1, p {
     margin-bottom: 0.75rem;
+    color: #fff;
 }
 
 #footer_social_media {
@@ -601,10 +603,11 @@ footer {
     flex-direction: column;
     gap: 0.75rem;
     list-style: none;
+    color: #fff;
 }
 
 .footer-list .footer-link {
-    color: var(--color-neutral-30);
+    color: #fff;
     transition: all 0.4s;
 }
 
@@ -616,10 +619,11 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    color: #fff;
 }
 
 #footer_subscribe p {
-    color: var(--color-neutral-30);
+    color: #fff;
 }
 
 #input_group {
@@ -629,6 +633,7 @@ footer {
     border-radius: 4px;
     flex-direction: column;
     gap: 20px;
+    color: #fff;
 }
 
 #input_group input {
@@ -640,7 +645,7 @@ footer {
 
 #input_group button {
     border: none;
-    color: var(--color-neutral-40);
+    color: #fff;
     padding: 0px 1.25rem;
     font-size: 1.125rem;
     height: 100%;
@@ -657,6 +662,7 @@ footer {
     display: flex;
     justify-content: center;
     background-color: var(--color-neutral-0);
+    color: #fff;
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
