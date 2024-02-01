@@ -1,0 +1,52 @@
+* {
+    margin: 5px;
+    padding: 5px;
+    background-color:#0e0b14;
+    font-family: poppins;
+}
+
+
+.marvelFilmes {
+font-size: 40px;
+color: white;
+font-weight: bold;
+padding-left: 13px;
+}
+
+
+.container {
+    margin: 0;
+    padding: 0px;
+   background-color: #0e0b14;
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    gap: 30px;
+font-size: 14px;
+font-weight: bold;
+color: white;
+text-align: center;
+line-height: 3px;
+justify-content: space-between;
+letter-spacing: 1px;
+}
+
+
+img {
+    width: 167.25px;
+    height: 247.8px;
+    }
+
+
+.imagem {
+    transition: transform 0.1s ease;
+}
+
+
+.imagem:hover {
+    transform: translateY(-5px);
+}
+   
+
+
+
