@@ -508,7 +508,7 @@ body::-webkit-scrollbar-thumb {
 
 #divContainer img{
     cursor: pointer;
-    width: 100px;
+    width: 120px;
     height: 100px;
     margin: 0.20%;
     border: 2px solid #ee2027;
@@ -620,11 +620,16 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    color: #fff;
+    color: #ffffff;
 }
 
 #footer_subscribe p {
-    color: #fff;
+    color: #ffffff;
+}
+
+#footer_subscribe i {
+    color: #000;
+    font-size: 20px;
 }
 
 #input_group {
@@ -642,6 +647,12 @@ footer {
     padding: 0.75rem;
     width: 100%;
     background-color: #fff;
+    gap: 20px;
+}
+
+#input_group #message {
+    width: 400px;
+    height: 200px;
 }
 
 #input_group button {
@@ -649,10 +660,11 @@ footer {
     color: #fff;
     padding: 0px 1.25rem;
     font-size: 1.125rem;
-    height: 100%;
     border-radius: 0px 4px 4px 0px;
     cursor: pointer;
     transition: all 0.4s;
+    display: flex;
+    margin: auto;
 }
 
 #input_group button:hover {
