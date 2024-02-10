@@ -209,15 +209,15 @@
               <p>Algumas das páginas sociais.</p>
 
               <div id="footer_social_media">
-                  <a href="#" class="footer-link" id="bi-linkedin">
+                  <a href="https://www.linkedin.com/in/gabriel-teodoro-a5bb0825b/" class="footer-link" id="bi-linkedin">
                     <i class="bi bi-linkedin"></i>
                   </a>
 
-                  <a href="#" class="footer-link" id="bi-github">
+                  <a href="https://github.com/teodoroooo?tab=repositories" class="footer-link" id="bi-github">
                     <i class="bi bi-github"></i>
                   </a>
 
-                  <a href="#" class="footer-link" id="marvel">
+                  <a href="https://www.marvel.com/" class="footer-link" id="marvel">
                     <i class="bi bi-box-fill"></i>
                   </a>
               </div>
@@ -225,13 +225,13 @@
           
           <ul class="footer-list">
               <li>
-                  <h3>CoderHouse Brasil</h3>
+                  <h3>Diversos</h3>
               </li>
               <li>
-                  <a href="#" class="footer-link">Tech</a>
+                  <a href="https://roadmap.sh/roadmaps" class="footer-link">Roadmap Developer</a>
               </li>
               <li>
-                  <a href="#" class="footer-link">Adventures</a>
+                  <a href="https://www.youtube.com/@codigofontetv" class="footer-link">Adventure</a>
               </li>
               <li>
                   <a href="https://www.youtube.com/watch?v=knfrxj0T5NY" class="footer-link">Music</a>
@@ -264,15 +264,24 @@
               </p>
 
               <div id="input_group">
-                <form action="https://formsubmit.co/d426d1959619b50a343d85e0044a7c e5" method="POST"></form>
-                  <label for="email_subscribe">E-mail:</label>
-                  <input type="email" id="email" required>
-                  <label for="message">Mensagem</label>
-                  <input type="text" name="message" id="message" required>
-                  <button type="submit">
+                <form id="contactForm" method="post">
+                  <label for="name">Nome:</label>
+                  <input type="text" id="name" name="name" required>
+                  <br>
+          
+                  <label for="email">Endereço de email:</label>
+                  <input type="email" id="email" name="email" required>
+                  <br>
+          
+                  <label for="message">Mensagem:</label>
+                  <textarea id="message" name="message" required></textarea>
+                  <br>
+          
+                  <button type="button" id="submitButton">
                     <i class="bi bi-envelope"></i>
                   </button>
-                </form>
+              </form>
+              <div id="messageSent" style="display:none;">Email enviado com sucesso!</div>
               </div>
           </div>
       </div>
@@ -285,5 +294,6 @@
     <script src="/assets/js/menu.js"></script>
     <script src="/assets/js/jogo.js"></script>
     <script src="/assets/js/search.js"></script>
+    <script src="./assets/js/contact.js"></script>
 </body> 
 </html>
