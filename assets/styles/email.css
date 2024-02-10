@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 40px 8%; 
+    background-image: url(/email.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email span {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.email button {
+    border-radius: 20px;
+    border: #000;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    margin: auto;
+    background-color: red;
+    margin-top: 20px;
+}
+
+.email a {
+    text-decoration: none;
+    color: #fff;
+    width: 200px;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 200;
+}
