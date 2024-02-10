@@ -653,6 +653,7 @@ footer {
 #input_group #message {
     width: 400px;
     height: 200px;
+    resize: none;
 }
 
 #input_group button {
@@ -673,6 +674,8 @@ footer {
 
 #footer_copyright {
     display: flex;
+    align-items: center;
+    margin: auto;
     justify-content: center;
     background-color: var(--color-neutral-0);
     color: #fff;
