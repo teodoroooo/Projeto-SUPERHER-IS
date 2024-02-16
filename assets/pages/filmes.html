@@ -373,16 +373,93 @@
 <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
 </div>
     
-     <div id="footer_copyright">
-            &#169
-            2024 Todos os direitos reservados.
+   <footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1>Links</h1>
+            <p>Algumas das páginas sociais.</p>
+
+            <div id="footer_social_media">
+                <a href="https://www.linkedin.com/in/gabriel-teodoro-a5bb0825b/" class="footer-link" id="bi-linkedin">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+
+                <a href="https://github.com/teodoroooo?tab=repositories" class="footer-link" id="bi-github">
+                  <i class="bi bi-github"></i>
+                </a>
+
+                <a href="https://www.marvel.com/" class="footer-link" id="marvel">
+                  <i class="bi bi-box-fill"></i>
+                </a>
+            </div>
         </div>
-    
- </footer>
-    <script src="/assets/js/menu.js"></script>
-    <script src="/assets/js/jogo.js"></script>
-    <script src="/assets/js/search.js"></script>
-    <script src="/assets/js/contact.js"></script>
+        
+        <ul class="footer-list">
+            <li>
+                <h3>Diversos</h3>
+            </li>
+            <li>
+                <a href="https://roadmap.sh/roadmaps" class="footer-link">Roadmap Developer</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@codigofontetv" class="footer-link">Adventure</a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=knfrxj0T5NY" class="footer-link">Music</a>
+            </li>
+        </ul>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Desenvolvedores</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Gabriel Teodoro</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Maria Fernanda</a>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Marta Nascimento</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Maria Eduarda Carvalho</a>
+          </li>
+        </ul>
+
+        <div id="footer_subscribe">
+            <h3>Contato</h3>
+
+            <p>
+                Nos envie um e-mail para dar dicas e críticas construtivas.
+            </p>
+
+            <div id="input_group">
+              <form id="contact-form" action="https://formsubmit.co/contato.gabrieldevfullstack@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/email.html">
+                <input type="hidden" name="_autoresponse" value="Obrigado pela mensagem!!!">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+            
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+            
+                <button type="submit" id="submit-button">
+                  <i class="bi bi-envelope"></i>
+                </button>
+              </form>
+              <p id="response"></p>
+        </div>
+    </div>
+
+    <div id="footer_copyright">
+        &#169
+        2024 Todos os direitos reservados.
+    </div>
+  </footer>
 
      <script src="./scripts/filmes.js"></script>
     
