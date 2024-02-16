@@ -638,7 +638,6 @@ footer {
     background-color: var(--color-neutral-0);
     border-radius: 4px;
     flex-direction: column;
-    gap: 20px;
     color: #fff;
 }
 
@@ -647,12 +646,9 @@ footer {
     padding: 0.75rem;
     width: 100%;
     background-color: #fff;
-    gap: 20px;
 }
 
 #input_group #message {
-    width: 400px;
-    height: 200px;
     resize: none;
 }
 
@@ -674,14 +670,13 @@ footer {
 
 #footer_copyright {
     display: flex;
-    align-items: center;
-    margin: auto;
     justify-content: center;
     background-color: var(--color-neutral-0);
     color: #fff;
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
+    margin: auto;
 }
 
 /* Colocando responsividade */
