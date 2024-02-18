@@ -1,7 +1,7 @@
 * {
     margin: 5px;
     padding: 5px;
-    background-color: white;
+    background-color: #0e0b14;
     font-family: poppins;
 }
 
@@ -18,7 +18,7 @@ header > .interface {
 }
 
 header a{
-    color:#000000;
+    color: #white;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
