@@ -131,15 +131,15 @@
         <section class="herois">
           <div class="buscar-box">
             <div class="lupa-buscar">
-                <i class="bi bi-search"></i>
+              <i class="bi bi-search"></i>
             </div><!--lupa-buscar-->
     
             <div class="input-buscar">
-                <input type="text" name="search" id="search" class="" placeholder="Pesquise seu herói">
+              <input type="text" name="search" id="search" class="ativar" placeholder="Pesquise seu herói">
             </div><!--input-buscar-->
     
-            <div class="btn-fechar">
-                <i class="bi bi-x-circle"></i>
+            <div class="btn-fechar" id="fechar">
+              <i class="bi bi-x-circle"></i>
             </div><!--btn-fechar-->
           </div><!--buscar-box-->
     
@@ -189,17 +189,13 @@
 
         <section class="jogo">
           <!-- Parte do jogo -->
-          <h2 id = 'jogo'>JOGO DA MEMÓRIA</h2>
-          <h2 id = 'pontos'>PONTOS: <span id = 'totalPontos'></span></h2>
-          
-          <div id = 'grade'>
-              <div id = 'divContainer'>
-              </div>
-              <div id = 'final'>
-                  <p>Obrigado por jogar!</p>
-                  <p id = 'relogar'>Jogar Novamente!</p>
-              </div>
+          <div class="game">
+            <h1>Jogo da Memória</h1>
+            <span class="player"></span>
+            <span>Tempo: <span class="timer">00</span></span>
           </div>
+      
+          <div class="grid"></div>
         </section>
     </main> 
     <footer>
