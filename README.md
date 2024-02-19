@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img src=".github/preview.png" width="100%" />
+  <img src="https://github.com/teodoroooo/Projeto-SUPERHER-IS/issues/14#issue-2141282477" width="100%" />
 </p>
 
 ## 💻 Projeto
