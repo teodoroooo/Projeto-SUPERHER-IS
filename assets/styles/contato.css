@@ -496,10 +496,11 @@ footer {
 
 .footer-link {
     text-decoration: none;
+    color: white;
 }
 
 #footer_content {
-    background-color: var(--color-neutral-10);
+    background-color: var(--color-neutral-40);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
@@ -557,7 +558,7 @@ footer {
 }
 
 .footer-list .footer-link {
-    color: var(--color-neutral-30);
+    color: #fff;
     transition: all 0.4s;
 }
 
@@ -569,13 +570,16 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    color: #ffffff;
 }
 
-#footer_subscribe h3 {
-    color: #fff;
-}
 #footer_subscribe p {
-    color: #fff;
+    color: #ffffff;
+}
+
+#footer_subscribe i {
+    color: #000;
+    font-size: 20px;
 }
 
 #input_group {
@@ -583,24 +587,31 @@ footer {
     align-items: center;
     background-color: var(--color-neutral-0);
     border-radius: 4px;
+    color: #fff;
 }
 
 #input_group input {
-    all: unset;
+    border-radius: 10px;
     padding: 0.75rem;
     width: 100%;
     background-color: #fff;
 }
 
+#input_group #message {
+    resize: none;
+}
+
 #input_group button {
+    background-color: #fff;
     border: none;
-    color: var(--color-neutral-40);
+    color: #fff;
     padding: 0px 1.25rem;
     font-size: 1.125rem;
-    height: 100%;
     border-radius: 0px 4px 4px 0px;
     cursor: pointer;
     transition: all 0.4s;
+    display: flex;
+    margin: auto;
 }
 
 #input_group button:hover {

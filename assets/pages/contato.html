@@ -267,7 +267,6 @@
         </div>
     </div>
  
-
     <footer>
         <div id="footer_content">
             <div id="footer_contacts">
@@ -275,15 +274,15 @@
                 <p>Algumas das páginas sociais.</p>
   
                 <div id="footer_social_media">
-                    <a href="#" class="footer-link" id="bi-linkedin">
+                    <a href="https://www.linkedin.com/in/gabriel-teodoro-a5bb0825b/" class="footer-link" id="bi-linkedin">
                       <i class="bi bi-linkedin"></i>
                     </a>
   
-                    <a href="#" class="footer-link" id="bi-github">
+                    <a href="https://github.com/teodoroooo?tab=repositories" class="footer-link" id="bi-github">
                       <i class="bi bi-github"></i>
                     </a>
   
-                    <a href="#" class="footer-link" id="marvel">
+                    <a href="https://www.marvel.com/" class="footer-link" id="marvel">
                       <i class="bi bi-box-fill"></i>
                     </a>
                 </div>
@@ -291,13 +290,13 @@
             
             <ul class="footer-list">
                 <li>
-                    <h3>CoderHouse Brasil</h3>
+                    <h3>Diversos</h3>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Tech</a>
+                    <a href="https://roadmap.sh/roadmaps" class="footer-link">Roadmap Developer</a>
                 </li>
                 <li>
-                    <a href="#" class="footer-link">Adventures</a>
+                    <a href="https://www.youtube.com/@codigofontetv" class="footer-link">Adventure</a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com/watch?v=knfrxj0T5NY" class="footer-link">Music</a>
@@ -330,11 +329,23 @@
                 </p>
   
                 <div id="input_group">
-                    <input type="email" id="email">
-                    <button>
+                  <form id="contact-form" action="https://formsubmit.co/contato.gabrieldevfullstack@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/email.html">
+                    <input type="hidden" name="_autoresponse" value="Obrigado pela mensagem!!!">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                
+                    <button type="submit" id="submit-button">
                       <i class="bi bi-envelope"></i>
                     </button>
-                </div>
+                  </form>
+                  <p id="response"></p>
             </div>
         </div>
   
@@ -343,7 +354,9 @@
             2024 Todos os direitos reservados.
         </div>
       </footer>
+    </footer>
+    
 
-      <script src="assets/js/contato.js" ></script>
+    <script src="assets/js/contato.js" ></script>
 </body>
 </html>
