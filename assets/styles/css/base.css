@@ -1,0 +1,28 @@
+:root {
+    --bg-color: #17162E;
+    --branco: #FFFFFF;
+    --favorite-color: #BA0707;
+    --avaliacao-color: #D7A82F;
+    --card-color: #1D1C3B;
+    --light-blue: #706EA8;
+    --light-gray: #ACACAC;
+    --dark-gray: #8A8A8A;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    background-image: url(/assets/img/fundo.jpg);
+    padding: 2% 6%;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: normal;
+    color: var(--branco);
+}
+
+#filmes {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}

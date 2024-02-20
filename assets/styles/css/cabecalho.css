@@ -1,0 +1,199 @@
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .2s;
+}
+
+header a{
+    color:#000000;      
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    font-weight: 700;
+}
+
+header nav.menu-desktop a:hover {
+    color: #ff0000;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;   
+}
+
+.logo img{
+    width: 100px;
+}
+
+/* ESTILOS MENU-MOBILE */
+.btn-abrir-menu{
+    display: none;
+}
+
+.btn-abrir-menu i{
+    color: #000000;
+    font-size: 40px;
+}
+
+.menu-mobile{
+    background-color: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i{
+    color: #ff0000;
+    font-size: 30px;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}   
+
+.menu-mobile nav ul li a:hover{
+    background-color: #ff0000;
+    color: #000;
+}
+
+.overlay-menu{
+    background-color: #000000df;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho__titulo {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+    color: #000;
+}
+
+.cabecalho__pesquisa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 634px;
+    padding: 26px 30px 26px 24px;
+    border-radius: 8px;
+    opacity: 0.25;
+    background-color: #000;
+    margin-top: 48px;
+    margin-bottom: 30px;
+}
+
+.cabecalho__pesquisa-input {
+    width: 95%;
+    height: 100%;
+    border: none;
+    color: #fff;
+    background-color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    outline: none;
+}
+
+.cabecalho__pesquisa-input:focus {
+    outline: none;
+}
+
+.cabecalho__pesquisa-lupa {
+    width: 18.35px;
+    height: 19.35px;
+    flex-shrink: 0;
+    cursor: pointer;
+    pointer-events: pointer;
+}
+.cabecalho__checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    color: #000;
+}
+
+.cabecalho__checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 4px;
+    border: 2px solid #000000;
+    outline: none;
+    cursor: pointer;
+}
+
+.cabecalho__checkbox input[type="checkbox"]:checked {
+    background: #000000 url(/assets/img/img/vector__checket.svg) no-repeat center / 80%;
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 1024px) {
+    .cabecalho {
+        width: 90vw;
+    }
+    .cabecalho__pesquisa {
+        width: 90%;
+    }
+    .cabecalho__checkbox {
+        font-size: 16px;
+    }
+
+
+}
