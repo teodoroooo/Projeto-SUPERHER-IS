@@ -1,83 +1,21 @@
+import { InserirFilmesNaTela } from "../../assets/js/main.js";
 
-// Criar o slider com Swipper
-function createNewSwiper() {
-  new Swiper(".heroSwiper", {
-    draggable: true,
-    slidesPerView: 3,
-    slidesPerGroup: 3,
-    spaceBetween: 50,
-    observer: true,
-    observeParents: true,
-  
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+export const apiKey = '347812d58f486579a079932fbd8c4143';
+let movies = []; 
 
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'fraction',
-    },
-  });
-}
-
-// Inserir um slide para cada herói
-function setAllHeroes(heroes) {
-  let swiper = document.getElementById("swiper");
-
-  if (heroes.length === 0) return swiper.innerHTML = '<div class="swiper-slide">Sem resultados</div>'
-  
-  const heroesHTML = heroes.map(hero => {
-    let slideElement = `
-      <div class="swiper-slide hero">
-        <a class="hero-image" href="${hero.urls[0].url}" target="_blank">
-          <img src="${hero.thumbnail.path}.${hero.thumbnail.extension}">
-          <span class="hero-name">${hero.name}</span>
-        </a>
-      </div>
-    `;
-
-    return slideElement;
+fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=pt-BR`)
+  .then(response => response.json())
+  .then(data => {
+    movies = data.results.slice(0, 10); // Atribui o valor a movies, por exemplo (top 10 filmes populares)
+    InserirFilmesNaTela(movies);
   })
+  .catch(error => {
+    console.error('Ocorreu um erro ao obter os filmes populares:', error);
+  });
 
-  swiper.innerHTML = heroesHTML.join(" ");
-}
-
-// Buscar todos os heróis da Marvel
-function getAllHeroes() {
-  fetch(`https://gateway.marvel.com:443/v1/public/characters?ts=1706283788&apikey=a21b640101cab297641185b0e0c419a4&hash=e56bad61e029119eecdc7a141e48ffec&limit=100`)
-    .then(response => response.json())
-    .then(response => {
-      const heroes = response.data.results;
-      setAllHeroes(heroes);
-    })
-}
-
-// Pesquisar por heróis específicos da Marvel
-function searchHero() {
-  const search = document.getElementById("search");
-
-  const nameStartsWith = search.value.length > 0 ? `&nameStartsWith=${search.value}` : ''
-
-  fetch(`https://gateway.marvel.com:443/v1/public/characters?ts=1706283788&apikey=a21b640101cab297641185b0e0c419a4&hash=e56bad61e029119eecdc7a141e48ffec&limit=100${nameStartsWith}`)
-    .then(response => response.json())
-    .then(response => {
-      const heroes = response.data.results;
-      setAllHeroes(heroes);
-    })
-}
-
-function debounce(callback, wait) {
-  let timeoutId = null;
-  return (...args) => {
-    window.clearTimeout(timeoutId);
-    timeoutId = window.setTimeout(() => {
-      callback.apply(null, args);
-    }, wait);
-  };
-}
-
-getAllHeroes();
-createNewSwiper();
-document.getElementById("search").addEventListener("input", debounce(searchHero, 800));
-document.getElementById("search").addEventListener("propertychange", debounce(searchHero, 800)); // IE18
+const home = document.querySelector('.cabecalho__titulo');
+home.addEventListener('click', () => {
+  InserirFilmesNaTela(movies);
+  document.getElementById('cabecalho__checkbox').checked = false;
+  document.querySelector('.card__lista-vazia').style.display = 'none';
+});

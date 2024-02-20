@@ -1,0 +1,133 @@
+.cards {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    width: 100%;
+    max-width: 1224px;
+    min-height: 201px;
+    padding: 32px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #691d1d;
+
+    /* Shadow */
+    box-shadow: 0.3335185647010803px 0.24931815266609192px 2.4224610328674316px 0px rgba(0, 0, 0, 0.03), 1.4366953372955322px 1.0739859342575073px 4.567187309265137px 0px rgba(0, 0, 0, 0.05), 3.4634618759155273px 2.5890731811523438px 7.6376953125px 0px rgba(0, 0, 0, 0.06), 6.567749977111816px 4.909649848937988px 12.837499618530273px 0px rgba(0, 0, 0, 0.08), 10.903491020202637px 8.150785446166992px 21.3701171875px 0px rgba(0, 0, 0, 0.09), 16.624616622924805px 12.42755126953125px 34.439064025878906px 0px rgba(0, 0, 0, 0.10), 23.885059356689453px 17.85501480102539px 53.24785232543945px 0px rgba(0, 0, 0, 0.12), 32.838748931884766px 24.548248291015625px 79px 0px rgba(0, 0, 0, 0.15);
+}
+
+.cards__parte1 {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards__parte1-capa {
+    width: 150px;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.779);
+}
+
+.cards__parte2 {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cards__parte2-titulo {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.cards__parte2-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cards__parte2-details {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.cards__parte2-details div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cards__parte2-checkbox {
+    width: 25px;
+    height: 25px;
+    flex-shrink: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 4px;
+    background: url(/assets/img/img/Heart.svg) no-repeat center / 80%;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .cards__parte2-checkbox:checked {
+    background: url(/assets/img/img/heart-full.svg) no-repeat center / 80%;
+  }
+  
+.cards__parte3 {
+    width: 50%;
+    text-align: justify;
+}
+
+.cards__parte3-texto {
+    color: var(--light-gray);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 177.023%;
+}
+
+.card__lista-vazia {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+    max-width: 1224px;
+    min-height: 70px;
+    padding: 32px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #691d1d;
+    box-shadow: 0.3335185647010803px 0.24931815266609192px 2.4224610328674316px 0px rgba(0, 0, 0, 0.03), 1.4366953372955322px 1.0739859342575073px 4.567187309265137px 0px rgba(0, 0, 0, 0.05), 3.4634618759155273px 2.5890731811523438px 7.6376953125px 0px rgba(0, 0, 0, 0.06), 6.567749977111816px 4.909649848937988px 12.837499618530273px 0px rgba(0, 0, 0, 0.08), 10.903491020202637px 8.150785446166992px 21.3701171875px 0px rgba(0, 0, 0, 0.09), 16.624616622924805px 12.42755126953125px 34.439064025878906px 0px rgba(0, 0, 0, 0.10), 23.885059356689453px 17.85501480102539px 53.24785232543945px 0px rgba(0, 0, 0, 0.12), 32.838748931884766px 24.548248291015625px 79px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 1024px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        width: 70vw;
+        max-width: 350px;
+        padding: 32px;
+        gap: 32px;
+    }
+    
+    .cards__parte1 {
+        width: 100%;
+    }
+    .cards__parte2 {
+        width: 100%;
+        align-items: center;
+    }
+    .cards__parte3 {
+        width: 100%;
+    }
+    .card__lista-vazia {
+        width: 70vw;
+        max-width: 350px;
+    }
+}
+
+
+
