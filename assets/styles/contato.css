@@ -63,6 +63,7 @@ header nav.menu-desktop ul li {
     box-shadow: #000;
     cursor: pointer;
     font-weight: 700;
+    display: none;
 }
 
 .btn-abrir-menu i:hover {
